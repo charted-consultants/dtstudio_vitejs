@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://aurastudio.chartedconsultants.com/No%20logo%20-%20WebP/AURA/07%20-%20Vay%20dam%20hong%20-%20Salon%20Victorian/57.webp"/>
 <meta property="og:locale" content="vi_VN"/>
 <meta property="og:site_name" content="AURA Studio"/>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233A9E86'/><text x='50%25' y='54%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia,serif' font-size='17' font-weight='bold' fill='white'>A</text></svg>"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231D2926'/><path d='M6 12h3l2-3h10l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2z' fill='none' stroke='%235BB5A0' stroke-width='1.5'/><circle cx='16' cy='18' r='4' fill='none' stroke='%235BB5A0' stroke-width='1.5'/><circle cx='16' cy='18' r='1.5' fill='%235BB5A0'/></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
@@ -199,28 +199,6 @@ img{display:block;max-width:100%;height:auto}
 .price-card.hot .price-cta{border-color:rgba(255,255,255,.25);color:rgba(255,255,255,.8);background:transparent}
 .price-card.hot .price-cta:hover{background:#fff;color:var(--dark)}
 
-/* ── TESTIMONIALS ── */
-#testimonials{padding:100px 0}
-.testi-head{text-align:center;margin-bottom:70px}
-.testi-list{display:flex;flex-direction:column;gap:0}
-.testi-item{display:grid;grid-template-columns:45% 55%;min-height:460px}
-.testi-item:nth-child(even){grid-template-columns:55% 45%}
-.testi-item:nth-child(even) .testi-img{order:2}
-.testi-item:nth-child(even) .testi-text{order:1}
-.testi-img{position:relative;overflow:hidden}
-.testi-img img{width:100%;height:100%;object-fit:cover}
-.testi-text{display:flex;flex-direction:column;justify-content:center;padding:56px 64px;background:var(--bg2)}
-.testi-item:nth-child(even) .testi-text{background:var(--dark)}
-.testi-service{font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:24px}
-.testi-item:nth-child(even) .testi-service{color:var(--gold2)}
-.testi-quote{font-family:var(--serif);font-size:clamp(18px,2.2vw,26px);font-weight:300;font-style:italic;color:var(--dark);line-height:1.55;margin-bottom:32px}
-.testi-item:nth-child(even) .testi-quote{color:#fff}
-.testi-title{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--dark);margin-bottom:8px}
-.testi-item:nth-child(even) .testi-title{color:rgba(255,255,255,.85)}
-.testi-name{font-size:13px;color:var(--muted)}
-.testi-item:nth-child(even) .testi-name{color:rgba(255,255,255,.4)}
-
-
 /* ── PROCESS ── */
 #process{padding:100px 0;background:var(--bg2)}
 .process-head{margin-bottom:64px}
@@ -325,9 +303,6 @@ img{display:block;max-width:100%;height:auto}
   .col-card:nth-child(even) .col-img,.col-card:nth-child(even) .col-body{order:unset}
   .col-body{padding:40px 32px}
   .pricing-grid{grid-template-columns:1fr;max-width:420px}
-  .testi-item,.testi-item:nth-child(even){grid-template-columns:1fr;grid-template-rows:320px auto}
-  .testi-item:nth-child(even) .testi-img,.testi-item:nth-child(even) .testi-text{order:unset}
-  .testi-text{padding:40px 32px}
   .process-grid{grid-template-columns:repeat(2,1fr)}
   .faq-inner{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr;gap:36px}
@@ -340,7 +315,7 @@ img{display:block;max-width:100%;height:auto}
 
 /* ── MOBILE ── */
 @media(max-width:600px){
-  #services,#about,#usp,#collections,#pricing,#testimonials,#process,#faq,#cta-banner{padding:64px 0}
+  #services,#about,#usp,#collections,#pricing,#process,#faq,#cta-banner{padding:64px 0}
   .container,.nav-inner,.usp-inner{padding:0 20px}
   .hero-body{padding:0 20px 72px}
   .hero-scroll{display:none}
@@ -351,8 +326,6 @@ img{display:block;max-width:100%;height:auto}
   .svc-grid{grid-template-columns:1fr}
   .col-card,.col-card:nth-child(even){grid-template-rows:300px auto}
   .col-body{padding:28px 20px}
-  .testi-item,.testi-item:nth-child(even){grid-template-rows:280px auto}
-  .testi-text{padding:28px 20px}
   .process-grid{grid-template-columns:1fr}
   .process-step{padding:28px 20px}
   .pricing-grid{max-width:100%}
@@ -389,7 +362,7 @@ img{display:block;max-width:100%;height:auto}
 </div>
 
 <!-- NAV -->
-<nav id="nav">
+<nav id="nav" class="solid">
   <div class="nav-inner">
     <a class="nav-logo" href="#">AURA<span class="dot">.</span></a>
     <div class="nav-links">
@@ -599,7 +572,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Vàng Nghệ Phố Cổ</h3>
+      <h3 class="col-title" data-i18n="col01.title">Vàng Nghệ Phố Cổ</h3>
       <p class="col-tagline" data-i18n="col01.tagline">"Turmeric gold in the old quarter — quiet and unforgettable."</p>
       <p class="col-desc" data-i18n="col01.desc">A turmeric-yellow ao dai set against moss-covered old streets, warm tones, natural light. An afternoon standing still while time flows on.</p>
       <button class="col-btn" onclick="openAlbum('aura01')" data-i18n="col.btn">View collection</button>
@@ -614,7 +587,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Mùa Xuân Đỏ Thắm</h3>
+      <h3 class="col-title" data-i18n="col02.title">Mùa Xuân Đỏ Thắm</h3>
       <p class="col-tagline" data-i18n="col02.tagline">"Red cheongsam, white orchids. Tet arrives in a bloom of colour."</p>
       <p class="col-desc" data-i18n="col02.desc">The deep red of cheongsam meets spring orchids. A Tet portrait steeped in Eastern tradition — elegant yet vivid, echoing past New Years.</p>
       <button class="col-btn" onclick="openAlbum('aura02')" data-i18n="col.btn">View collection</button>
@@ -629,7 +602,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Nữ Thần Vàng</h3>
+      <h3 class="col-title" data-i18n="col03.title">Nữ Thần Vàng</h3>
       <p class="col-tagline" data-i18n="col03.tagline">"Gold is not a colour. Gold is an attitude."</p>
       <p class="col-desc" data-i18n="col03.desc">A portrait celebrating the strength and beauty of women. Golden light, powerful attire, confident spirit — all coming together in a set like no other.</p>
       <button class="col-btn" onclick="openAlbum('aura03')" data-i18n="col.btn">View collection</button>
@@ -644,7 +617,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Hoài Niệm Phố Cổ</h3>
+      <h3 class="col-title" data-i18n="col06.title">Hoài Niệm Phố Cổ</h3>
       <p class="col-tagline" data-i18n="col06.tagline">"Two friends, one old-street afternoon, and a memory that never fades."</p>
       <p class="col-desc" data-i18n="col06.desc">Two girls in retro ao dai walking slowly through old alleyways. No elaborate posing needed — just real moments. The frames say everything.</p>
       <button class="col-btn" onclick="openAlbum('aura06')" data-i18n="col.btn">View collection</button>
@@ -659,7 +632,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Hồng Victorien</h3>
+      <h3 class="col-title" data-i18n="col07.title">Hồng Victorien</h3>
       <p class="col-tagline" data-i18n="col07.tagline">"A French salon, a billowing pink gown. A European afternoon in the heart of Vietnam."</p>
       <p class="col-desc" data-i18n="col07.desc">A lavish Victorian salon, a stunning pink ballgown — every frame like a scene from a European period film.</p>
       <button class="col-btn" onclick="openAlbum('aura07')" data-i18n="col.btn">View collection</button>
@@ -674,7 +647,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Trắng Tinh Vườn Hoa</h3>
+      <h3 class="col-title" data-i18n="col09.title">Trắng Tinh Vườn Hoa</h3>
       <p class="col-tagline" data-i18n="col09.tagline">"A white wedding gown in a flower garden. A moment that only happens once."</p>
       <p class="col-desc" data-i18n="col09.desc">A wedding set with pure, radiant beauty amid a vibrant garden, natural light, bright colours, real emotion. A memory worth keeping forever.</p>
       <button class="col-btn" onclick="openAlbum('aura09')" data-i18n="col.btn">View collection</button>
@@ -689,7 +662,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Duyên Đầu Đời</h3>
+      <h3 class="col-title" data-i18n="col14.title">Duyên Đầu Đời</h3>
       <p class="col-tagline" data-i18n="col14.tagline">"White and red ao dai on engagement day. This is where destiny begins."</p>
       <p class="col-desc" data-i18n="col14.desc">A sacred engagement day captured in frames that are formal, warm, and authentically Vietnamese. White ao dai, lucky red, a radiant smile welcoming a new chapter.</p>
       <button class="col-btn" onclick="openAlbum('aura14')" data-i18n="col.btn">View collection</button>
@@ -704,7 +677,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Hanfu Tuyết Rơi</h3>
+      <h3 class="col-title" data-i18n="col18.title">Hanfu Tuyết Rơi</h3>
       <p class="col-tagline" data-i18n="col18.tagline">"Pink hanfu, falling snow, lotus blossoms. A winter that doesn't belong to reality."</p>
       <p class="col-desc" data-i18n="col18.desc">An ancient-costume concept inspired by Chinese ink painting. A pink hanfu drifts gently through white snow and pristine lotus blooms — each frame stepping out of a watercolour scroll.</p>
       <button class="col-btn" onclick="openAlbum('aura18')" data-i18n="col.btn">View collection</button>
@@ -719,7 +692,7 @@ img{display:block;max-width:100%;height:auto}
     </div>
     <div class="col-body">
       <span class="col-year">AURA · 2024</span>
-      <h3 class="col-title">Kem Pháp Cổ Điển</h3>
+      <h3 class="col-title" data-i18n="col20.title">Kem Pháp Cổ Điển</h3>
       <p class="col-tagline" data-i18n="col20.tagline">"A cream ao dai in a French villa. Vietnamese grace in a Western space."</p>
       <p class="col-desc" data-i18n="col20.desc">A classic French colonial villa as backdrop for an elegant cream ao dai. The blend of Vietnamese tradition and European architecture creates refined, one-of-a-kind frames.</p>
       <button class="col-btn" onclick="openAlbum('aura20')" data-i18n="col.btn">View collection</button>
@@ -788,95 +761,6 @@ img{display:block;max-width:100%;height:auto}
           <li data-i18n="price.03.li7">Premium printed photo album included</li>
         </ul>
         <button class="price-cta" onclick="location.href='#cta-banner'" data-i18n="price.cta">Choose this package</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="container">
-    <div class="testi-head reveal">
-      <span class="eyebrow" data-i18n="testi.eyebrow">Client Stories</span>
-      <h2 class="h2" data-i18n-html="testi.h2">Behind every set of photos<br/><i>is a real story</i></h2>
-    </div>
-  </div>
-  <div class="testi-list">
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/07%20-%20Vay%20dam%20hong%20-%20Salon%20Victorian/62.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.01.service">Portrait · Victorian Salon Concept</span>
-        <blockquote class="testi-quote" data-i18n="testi.01.quote">"Mình cực kỳ hài lòng với buổi chụp tại Aura Studio. Team rất nhiệt tình, hỗ trợ tạo dáng tận tâm nên ảnh lên vừa tự nhiên vừa sang. Nhận ảnh xong ai cũng khen!"</blockquote>
-        <div class="testi-title" data-i18n="testi.01.title">Tự nhiên, sang — và được khen không ngớt</div>
-        <div class="testi-name" data-i18n="testi.01.name">Minh Anh</div>
-      </div>
-    </div>
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/01%20-%20Ao%20dai%20vang%20nghe%20-%20Pho%20co/3.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.02.service">Portrait · Áo Dài Phố Cổ</span>
-        <blockquote class="testi-quote" data-i18n="testi.02.quote">"Không gian studio rất đẹp và hiện đại. Ban đầu mình khá ngại chụp hình nhưng photographer hướng dẫn rất chuyên nghiệp nên buổi chụp diễn ra cực kỳ thoải mái."</blockquote>
-        <div class="testi-title" data-i18n="testi.02.title">Từ e ngại đến hoàn toàn thoải mái</div>
-        <div class="testi-name" data-i18n="testi.02.name">Khánh Linh</div>
-      </div>
-    </div>
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/06%20-%20Hai%20co%20gai%20Ao%20dai%20-%20Pho%20co%20retro/40.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.03.service">Family · Phố Cổ Retro</span>
-        <blockquote class="testi-quote" data-i18n="testi.03.quote">"Gia đình mình chụp bộ ảnh kỷ niệm tại Aura Studio và thật sự vượt ngoài mong đợi. Các bé được ekip hỗ trợ rất kiên nhẫn, bắt được nhiều khoảnh khắc tự nhiên."</blockquote>
-        <div class="testi-title" data-i18n="testi.03.title">Khoảnh khắc gia đình, được giữ lại thật và trọn vẹn</div>
-        <div class="testi-name" data-i18n="testi.03.name">Gia đình chị Hương</div>
-      </div>
-    </div>
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/20%20-%20Ao%20dai%20kem%20-%20Biet%20thu%20Phap/147.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.04.service">Branding · Biệt Thự Pháp</span>
-        <blockquote class="testi-quote" data-i18n="testi.04.quote">"Ảnh branding cho công việc của mình được chỉnh rất tinh tế và chuyên nghiệp. Team hiểu rõ concept mình muốn và cho ra thành phẩm rất cao cấp."</blockquote>
-        <div class="testi-title" data-i18n="testi.04.title">Branding cao cấp, đúng concept, đúng cảm xúc</div>
-        <div class="testi-name" data-i18n="testi.04.name">Hoàng Nam</div>
-      </div>
-    </div>
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/14%20-%20Dam%20hoi%20-%20Ao%20dai%20trang%20Do/111.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.05.service">Wedding · Vườn Hoa</span>
-        <blockquote class="testi-quote" data-i18n="testi.05.quote">"Từ khâu booking đến lúc nhận ảnh đều rất nhanh chóng và chuyên nghiệp. Ảnh cưới của tụi mình lên màu cực đẹp, cảm xúc và đúng style mong muốn."</blockquote>
-        <div class="testi-title" data-i18n="testi.05.title">Ảnh cưới đẹp màu, đúng style, đúng deadline</div>
-        <div class="testi-name" data-i18n="testi.05.name">Tú &amp; Phương</div>
-      </div>
-    </div>
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/18%20-%20Hanfu%20hong%20-%20Tuyet%20roi%20Hoa%20sen/134.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.06.service">Portrait · Hanfu Hoa Sen</span>
-        <blockquote class="testi-quote" data-i18n="testi.06.quote">"Aura Studio giúp mình có trải nghiệm chụp ảnh cực kỳ dễ chịu dù trước giờ không tự tin trước ống kính. Photographer hướng dẫn pose dáng rất có tâm."</blockquote>
-        <div class="testi-title" data-i18n="testi.06.title">Người hay ngại ống kính — cũng có ảnh đẹp không ngờ</div>
-        <div class="testi-name" data-i18n="testi.06.name">Bảo Trân</div>
-      </div>
-    </div>
-    <div class="testi-item">
-      <div class="testi-img">
-        <img src="No%20logo%20-%20WebP/AURA/03%20-%20Nu%20than%20Vang%20-%20Gold%20Goddess/24.webp" alt="Câu chuyện khách hàng"/>
-      </div>
-      <div class="testi-text">
-        <span class="testi-service" data-i18n="testi.07.service">Portrait · Gold Goddess</span>
-        <blockquote class="testi-quote" data-i18n="testi.07.quote">"Rất recommend Aura Studio cho ai muốn có bộ ảnh đẹp và chất lượng. Ekip thân thiện, makeup đẹp, chỉnh ảnh tinh tế và đúng deadline."</blockquote>
-        <div class="testi-title" data-i18n="testi.07.title">Thân thiện, chỉnh tinh tế, giao đúng hẹn</div>
-        <div class="testi-name" data-i18n="testi.07.name">Đức Anh</div>
       </div>
     </div>
   </div>
@@ -1126,7 +1010,7 @@ img{display:block;max-width:100%;height:auto}
         <div class="footer-title" data-i18n="footer.col2">Explore</div>
         <div class="footer-links">
           <a href="#collections" data-i18n="footer.exp.01">Collections</a>
-          <a href="#testimonials" data-i18n="footer.exp.02">Client stories</a>
+          <a href="#feedback" data-i18n="footer.exp.02">Client stories</a>
           <a href="#pricing" data-i18n="footer.exp.03">Pricing</a>
           <a href="#process" data-i18n="footer.exp.04">How it works</a>
           <a href="#faq" data-i18n="footer.exp.05">FAQ</a>
@@ -1134,8 +1018,18 @@ img{display:block;max-width:100%;height:auto}
       </div>
       <div>
         <div class="footer-title" data-i18n="footer.col3">Contact</div>
-        <p class="footer-addr"><a href="https://maps.google.com/?q=Yên+Phúc,+Ý+Yên,+Nam+Định" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.55)">Yên Phúc, Ý Yên, Nam Định</a><br/><span data-i18n-html="footer.hours">Open: 8:00 – 20:00<br/>Monday – Sunday</span><br/><br/><a href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.55)">034 610 8711</a><br/><a href="mailto:info@aurastudio.com" style="color:rgba(255,255,255,.55)">info@aurastudio.com</a></p>
+        <p class="footer-addr"><a href="https://maps.google.com/?q=Yên+Phúc,+Ý+Yên,+Nam+Định" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.55)">Yên Phúc, Ý Yên, Nam Định</a><br/><span data-i18n-html="footer.hours">Open: 8:00 – 20:00<br/>Monday – Sunday</span><br/><br/><a href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.55)">034 610 8711</a><br/><a href="mailto:info@theauraphotography.com" style="color:rgba(255,255,255,.55)">info@theauraphotography.com</a></p>
       </div>
+    </div>
+    <div class="footer-social">
+      <a class="footer-social-link" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" title="Zalo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <rect width="28" height="28" rx="7" fill="#0068FF"/>
+          <text x="14" y="19.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff" letter-spacing="-0.5">Zalo</text>
+        </svg>
+      </a>
+      <span class="footer-social-sep">·</span>
+      <a class="footer-social-link" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer">034 610 8711</a>
     </div>
     <div class="footer-bottom">
       <span class="footer-copy" data-i18n="footer.copy">© 2024–2026 AURA Studio. All rights reserved.</span>
@@ -1170,10 +1064,7 @@ img{display:block;max-width:100%;height:auto}
 </div>
 
 <script>
-// ── Nav scroll ──
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('solid',scrollY>40);
-});
+// Nav always solid
 
 // ── Mobile nav ──
 function toggleMob(){
@@ -1189,22 +1080,26 @@ function toggleFaq(el){
 }
 
 // ── Albums ──
+const ALBUM_TITLES={
+  en:{aura01:'Golden Turmeric · Old Quarter',aura02:'Red Spring',aura03:'Gold Goddess',aura06:'Nostalgia · Old Quarter',aura07:'Victorian Pink',aura09:'Pure White Garden',aura14:'First Love',aura18:'Hanfu in Falling Snow',aura20:'Cream French Classic'},
+  vi:{aura01:'Vàng Nghệ Phố Cổ',aura02:'Mùa Xuân Đỏ Thắm',aura03:'Nữ Thần Vàng',aura06:'Hoài Niệm Phố Cổ',aura07:'Hồng Victorien',aura09:'Trắng Tinh Vườn Hoa',aura14:'Duyên Đầu Đời',aura18:'Hanfu Tuyết Rơi',aura20:'Kem Pháp Cổ Điển'}
+};
 const ALBUMS={
-  aura01:{title:'Vàng Nghệ Phố Cổ',path:'No%20logo%20-%20WebP/AURA/01%20-%20Ao%20dai%20vang%20nghe%20-%20Pho%20co/',files:['1.webp','2.webp','3.webp','4.webp','5.webp','6.webp']},
-  aura02:{title:'Mùa Xuân Đỏ Thắm',path:'No%20logo%20-%20WebP/AURA/02%20-%20Tet%20-%20Cheongsam%20do%20den%20-%20Mua%20lan/',files:['7.webp','8.webp','9.webp','10.webp','11.webp','12.webp','13.webp','14.webp','15.webp','16.webp','17.webp','18.webp','19.webp','20.webp','49.webp','50.webp','51.webp','52.webp','53.webp','54.webp','55.webp']},
-  aura03:{title:'Nữ Thần Vàng',path:'No%20logo%20-%20WebP/AURA/03%20-%20Nu%20than%20Vang%20-%20Gold%20Goddess/',files:['21.webp','22.webp','23.webp','24.webp','25.webp','26.webp','27.webp','28.webp','29.webp']},
-  aura06:{title:'Hoài Niệm Phố Cổ',path:'No%20logo%20-%20WebP/AURA/06%20-%20Hai%20co%20gai%20Ao%20dai%20-%20Pho%20co%20retro/',files:['40.webp','41.webp','42.webp','43.webp','44.webp','45.webp','46.webp','47.webp','48.webp']},
-  aura07:{title:'Hồng Victorien',path:'No%20logo%20-%20WebP/AURA/07%20-%20Vay%20dam%20hong%20-%20Salon%20Victorian/',files:['56.webp','57.webp','58.webp','59.webp','60.webp','61.webp','62.webp','63.webp','64.webp','65.webp','66.webp','67.webp','68.webp','69.webp']},
-  aura09:{title:'Trắng Tinh Vườn Hoa',path:'No%20logo%20-%20WebP/AURA/09%20-%20Vay%20cuoi%20trang%20-%20Vuon%20hoa/',files:['80.webp','81.webp','82.webp','83.webp']},
-  aura14:{title:'Duyên Đầu Đời',path:'No%20logo%20-%20WebP/AURA/14%20-%20Dam%20hoi%20-%20Ao%20dai%20trang%20Do/',files:['111.webp','111A.webp','112.webp','112A.webp','113.webp','114.webp']},
-  aura18:{title:'Hanfu Tuyết Rơi',path:'No%20logo%20-%20WebP/AURA/18%20-%20Hanfu%20hong%20-%20Tuyet%20roi%20Hoa%20sen/',files:['132.webp','133.webp','134.webp','135.webp','136.webp','137.webp','138.webp']},
-  aura20:{title:'Kem Pháp Cổ Điển',path:'No%20logo%20-%20WebP/AURA/20%20-%20Ao%20dai%20kem%20-%20Biet%20thu%20Phap/',files:['142.webp','142A.webp','143.webp','144.webp','145.webp','146.webp','147.webp']}
+  aura01:{path:'No%20logo%20-%20WebP/AURA/01%20-%20Ao%20dai%20vang%20nghe%20-%20Pho%20co/',files:['1.webp','2.webp','3.webp','4.webp','5.webp','6.webp']},
+  aura02:{path:'No%20logo%20-%20WebP/AURA/02%20-%20Tet%20-%20Cheongsam%20do%20den%20-%20Mua%20lan/',files:['7.webp','8.webp','9.webp','10.webp','11.webp','12.webp','13.webp','14.webp','15.webp','16.webp','17.webp','18.webp','19.webp','20.webp','49.webp','50.webp','51.webp','52.webp','53.webp','54.webp','55.webp']},
+  aura03:{path:'No%20logo%20-%20WebP/AURA/03%20-%20Nu%20than%20Vang%20-%20Gold%20Goddess/',files:['21.webp','22.webp','23.webp','24.webp','25.webp','26.webp','27.webp','28.webp','29.webp']},
+  aura06:{path:'No%20logo%20-%20WebP/AURA/06%20-%20Hai%20co%20gai%20Ao%20dai%20-%20Pho%20co%20retro/',files:['40.webp','41.webp','42.webp','43.webp','44.webp','45.webp','46.webp','47.webp','48.webp']},
+  aura07:{path:'No%20logo%20-%20WebP/AURA/07%20-%20Vay%20dam%20hong%20-%20Salon%20Victorian/',files:['56.webp','57.webp','58.webp','59.webp','60.webp','61.webp','62.webp','63.webp','64.webp','65.webp','66.webp','67.webp','68.webp','69.webp']},
+  aura09:{path:'No%20logo%20-%20WebP/AURA/09%20-%20Vay%20cuoi%20trang%20-%20Vuon%20hoa/',files:['80.webp','81.webp','82.webp','83.webp']},
+  aura14:{path:'No%20logo%20-%20WebP/AURA/14%20-%20Dam%20hoi%20-%20Ao%20dai%20trang%20Do/',files:['111.webp','111A.webp','112.webp','112A.webp','113.webp','114.webp']},
+  aura18:{path:'No%20logo%20-%20WebP/AURA/18%20-%20Hanfu%20hong%20-%20Tuyet%20roi%20Hoa%20sen/',files:['132.webp','133.webp','134.webp','135.webp','136.webp','137.webp','138.webp']},
+  aura20:{path:'No%20logo%20-%20WebP/AURA/20%20-%20Ao%20dai%20kem%20-%20Biet%20thu%20Phap/',files:['142.webp','142A.webp','143.webp','144.webp','145.webp','146.webp','147.webp']}
 };
 let curAlbum=null,curIdx=0;
 
 function openAlbum(key){
-  curAlbum=ALBUMS[key];curIdx=0;
-  document.getElementById('alb-title').textContent=curAlbum.title;
+  curAlbum=ALBUMS[key];curAlbum._key=key;curIdx=0;
+  document.getElementById('alb-title').textContent=ALBUM_TITLES[_lang][key];
   document.getElementById('alb-photo-count').textContent=curAlbum.files.length+' '+(T[_lang]['alb.photos']||'photos');
   buildGrid();
   document.getElementById('alb-single').classList.remove('open');
@@ -1220,7 +1115,7 @@ function buildGrid(){
     item.className='alb-grid-item';
     const img=document.createElement('img');
     img.src=curAlbum.path+f;
-    img.alt=curAlbum.title+' '+(i+1);
+    img.alt=ALBUM_TITLES[_lang][curAlbum._key]+' '+(i+1);
     img.loading=i<6?'eager':'lazy';
     item.appendChild(img);
     item.onclick=()=>openSingle(i);
@@ -1296,15 +1191,15 @@ en:{
 'about.eyebrow':'About AURA Studio','about.h2':'A studio that tells stories<br/><i>through light</i>','about.p1':"AURA was born from a simple belief: Vietnamese women deserve photos that celebrate their true beauty. No rigid posing, no heavy makeup, no retouching so heavy you become a stranger to yourself.",'about.quote':'"I don\'t photograph beauty. I photograph the story of the person standing in front of my lens."','about.p2':'Since opening, AURA has walked alongside hundreds of clients in Nam Dinh. Every shoot is its own journey, every set of photos a chapter of memory no one else can have.','about.sig':'Khieu Thi Hai Van, founding photographer of AURA Studio','about.badge':'sets completed',
 'usp.eyebrow':'What only AURA offers','usp.h2':'Three things<br/><i>only at AURA</i>','usp.01.title':'Pre-session<br/><i>consultation</i>','usp.01.desc':"Before your shoot, AURA consults on your concept and helps you choose outfits from the studio's wardrobe via Zalo. On shoot day, you walk in and start enjoying immediately — nothing left to worry about.",'usp.02.title':'A team with you<br/><i>throughout</i>','usp.02.desc':'The photographer and posing assistant stay with you from start to finish, no rush, no pressure. The session continues until you have all the frames you love.','usp.03.title':'Original files delivered<br/><i>the same day</i>','usp.03.desc':'All retouched photos delivered same day or within 24 hours. Full-resolution originals, print-ready at any size, kept forever.',
 'col.eyebrow':'Collections','col.h2':'Nine stories,<br/><i>nine styles</i>','col.desc':'Each album is an independent creative journey. Click any collection to view the full work.','col.btn':'View collection',
-'col01.tagline':'"Turmeric gold in the old quarter — quiet and unforgettable."','col01.desc':'A turmeric-yellow ao dai set against moss-covered old streets, warm tones, natural light. An afternoon standing still while time flows on.',
-'col02.tagline':'"Red cheongsam, white orchids. Tet arrives in a bloom of colour."','col02.desc':'The deep red of cheongsam meets spring orchids. A Tet portrait steeped in Eastern tradition — elegant yet vivid, echoing past New Years.',
-'col03.tagline':'"Gold is not a colour. Gold is an attitude."','col03.desc':'A portrait celebrating the strength and beauty of women. Golden light, powerful attire, confident spirit — all coming together in a set like no other.',
-'col06.tagline':'"Two friends, one old-street afternoon, and a memory that never fades."','col06.desc':'Two girls in retro ao dai walking slowly through old alleyways. No elaborate posing needed — just real moments. The frames say everything.',
-'col07.tagline':'"A French salon, a billowing pink gown. A European afternoon in the heart of Vietnam."','col07.desc':'A lavish Victorian salon, a stunning pink ballgown — every frame like a scene from a European period film.',
-'col09.tagline':'"A white wedding gown in a flower garden. A moment that only happens once."','col09.desc':'A wedding set with pure, radiant beauty amid a vibrant garden, natural light, bright colours, real emotion. A memory worth keeping forever.',
-'col14.tagline':'"White and red ao dai on engagement day. This is where destiny begins."','col14.desc':'A sacred engagement day captured in frames that are formal, warm, and authentically Vietnamese. White ao dai, lucky red, a radiant smile welcoming a new chapter.',
-'col18.tagline':'"Pink hanfu, falling snow, lotus blossoms. A winter that doesn\'t belong to reality."','col18.desc':'An ancient-costume concept inspired by Chinese ink painting. A pink hanfu drifts gently through white snow and pristine lotus blooms — each frame stepping out of a watercolour scroll.',
-'col20.tagline':'"A cream ao dai in a French villa. Vietnamese grace in a Western space."','col20.desc':'A classic French colonial villa as backdrop for an elegant cream ao dai. The blend of Vietnamese tradition and European architecture creates refined, one-of-a-kind frames.',
+'col01.title':'Golden Turmeric · Old Quarter','col01.tagline':'"Turmeric gold in the old quarter — quiet and unforgettable."','col01.desc':'A turmeric-yellow ao dai set against moss-covered old streets, warm tones, natural light. An afternoon standing still while time flows on.',
+'col02.title':'Red Spring','col02.tagline':'"Red cheongsam, white orchids. Tet arrives in a bloom of colour."','col02.desc':'The deep red of cheongsam meets spring orchids. A Tet portrait steeped in Eastern tradition — elegant yet vivid, echoing past New Years.',
+'col03.title':'Gold Goddess','col03.tagline':'"Gold is not a colour. Gold is an attitude."','col03.desc':'A portrait celebrating the strength and beauty of women. Golden light, powerful attire, confident spirit — all coming together in a set like no other.',
+'col06.title':'Nostalgia · Old Quarter','col06.tagline':'"Two friends, one old-street afternoon, and a memory that never fades."','col06.desc':'Two girls in retro ao dai walking slowly through old alleyways. No elaborate posing needed — just real moments. The frames say everything.',
+'col07.title':'Victorian Pink','col07.tagline':'"A French salon, a billowing pink gown. A European afternoon in the heart of Vietnam."','col07.desc':'A lavish Victorian salon, a stunning pink ballgown — every frame like a scene from a European period film.',
+'col09.title':'Pure White Garden','col09.tagline':'"A white wedding gown in a flower garden. A moment that only happens once."','col09.desc':'A wedding set with pure, radiant beauty amid a vibrant garden, natural light, bright colours, real emotion. A memory worth keeping forever.',
+'col14.title':'First Love','col14.tagline':'"White and red ao dai on engagement day. This is where destiny begins."','col14.desc':'A sacred engagement day captured in frames that are formal, warm, and authentically Vietnamese. White ao dai, lucky red, a radiant smile welcoming a new chapter.',
+'col18.title':'Hanfu in Falling Snow','col18.tagline':'"Pink hanfu, falling snow, lotus blossoms. A winter that doesn\'t belong to reality."','col18.desc':'An ancient-costume concept inspired by Chinese ink painting. A pink hanfu drifts gently through white snow and pristine lotus blooms — each frame stepping out of a watercolour scroll.',
+'col20.title':'Cream French Classic','col20.tagline':'"A cream ao dai in a French villa. Vietnamese grace in a Western space."','col20.desc':'A classic French colonial villa as backdrop for an elegant cream ao dai. The blend of Vietnamese tradition and European architecture creates refined, one-of-a-kind frames.',
 'price.eyebrow':'Pricing','price.h2':'Three packages, <i>three stories</i>','price.desc':'From one beautiful moment to a legacy kept forever. Every package includes full wardrobe, makeup and retouching. No hidden fees.','price.unit':'VND / session',
 'price.01.tag':'Package 01','price.01.title':'The Moment','price.01.sub':'Capture one beautiful moment — effortless and complete.','price.01.li1':'1 AURA wardrobe concept','price.01.li2':'Basic makeup & hair','price.01.li3':'10 carefully retouched photos','price.01.li4':'Full-resolution original files','price.01.li5':'Posing assistant on set','price.01.li6':'Photos delivered same day',
 'price.02.tag':'Package 02 · Most popular','price.02.title':'The Story','price.02.sub':'Tell your story through carefully crafted frames.','price.02.li1':'2 AURA wardrobe concepts','price.02.li2':'Advanced makeup & hair','price.02.li3':'20 carefully retouched photos','price.02.li4':'Full-resolution original files','price.02.li5':'Dedicated posing assistant throughout','price.02.li6':'Pre-session concept consultation via Zalo','price.02.li7':'Photos delivered same day',
@@ -1359,15 +1254,15 @@ vi:{
 'about.eyebrow':'Về AURA Studio','about.h2':'Studio kể chuyện<br/><i>bằng ánh sáng</i>','about.p1':'AURA ra đời từ niềm tin đơn giản: phụ nữ Việt Nam xứng đáng có những bộ ảnh tôn vinh vẻ đẹp thật sự của mình. Không tạo dáng cứng nhắc, không makeup dày, không retouch đến mức xa lạ với chính bạn.','about.quote':'"Tôi không chụp vẻ đẹp. Tôi chụp câu chuyện của người đứng trước ống kính."','about.p2':'Kể từ khi ra đời, AURA đã đồng hành cùng hàng trăm khách hàng tại Nam Định. Mỗi buổi chụp là một hành trình riêng, mỗi bộ ảnh là một chương ký ức không ai khác có được.','about.sig':'Khiếu Thị Hải Vân, nhiếp ảnh gia sáng lập AURA Studio','about.badge':'bộ ảnh đã thực hiện',
 'usp.eyebrow':'Điều chỉ có ở AURA','usp.h2':'Ba điều<br/><i>chỉ có ở AURA</i>','usp.01.title':'Chăm sóc trước<br/><i>buổi chụp</i>','usp.01.desc':'Trước ngày chụp, AURA tư vấn concept và hỗ trợ bạn chọn trang phục từ kho đồ của studio qua Zalo. Để đến ngày chụp, bạn bước vào là bắt đầu tận hưởng ngay, không phải lo thêm gì nữa.','usp.02.title':'Ekip đồng hành<br/><i>xuyên suốt</i>','usp.02.desc':'Nhiếp ảnh gia và trợ lý tạo dáng đồng hành từ đầu đến cuối, không vội vàng, không áp lực. Buổi chụp kéo dài đến khi bạn có đủ những khung hình ưng ý mới kết thúc.','usp.03.title':'Giao file ảnh gốc<br/><i>trong ngày</i>','usp.03.desc':'Toàn bộ ảnh đã retouch được gửi về trong ngày hoặc trong vòng 24 giờ. File gốc độ phân giải cao, in được khổ lớn, lưu giữ mãi mãi.',
 'col.eyebrow':'Bộ sưu tập','col.h2':'Chín câu chuyện,<br/><i>chín phong cách</i>','col.desc':'Mỗi album là một hành trình sáng tạo độc lập. Nhấn vào từng bộ để xem toàn bộ tác phẩm.','col.btn':'Xem bộ sưu tập',
-'col01.tagline':'"Sắc vàng nghệ giữa lòng phố cũ, nhẹ nhàng mà không thể quên."','col01.desc':'Áo dài vàng nghệ trên nền phố cổ rêu phong, tông màu ấm, ánh sáng tự nhiên. Một buổi chiều đứng yên giữa dòng thời gian đang chảy.',
-'col02.tagline':'"Cheongsam đỏ, hoa lan trắng. Tết đến trong sắc hoa."','col02.desc':'Sắc đỏ thắm của cheongsam gặp hoa lan mùa xuân. Bộ ảnh Tết mang hơi thở truyền thống phương Đông, trang nhã mà rực rỡ, gợi nhớ những mùa Tết xưa.',
-'col03.tagline':'"Vàng không phải màu sắc. Vàng là thái độ."','col03.desc':'Bộ ảnh tôn vinh sức mạnh và vẻ đẹp của người phụ nữ. Ánh sáng vàng rực, trang phục quyền năng, thần thái tự tin, tất cả tạo nên một bộ ảnh không lẫn vào ai.',
-'col06.tagline':'"Hai người bạn, một buổi chiều phố cũ, và ký ức không bao giờ phai."','col06.desc':'Hai cô gái trong tà áo dài retro, bước chầm chậm qua những con phố cũ. Họ không cần tạo dáng cồng kềnh, chỉ cần khoảnh khắc thật là đủ. Khung hình đã đủ nói lên tất cả.',
-'col07.tagline':'"Salon kiểu Pháp, váy hồng bồng bềnh. Một buổi chiều châu Âu giữa lòng Việt."','col07.desc':'Không gian Salon Victorian sang trọng, váy đầm hồng lộng lẫy, từng khung hình như thước phim điện ảnh châu Âu.',
-'col09.tagline':'"Váy cưới trắng giữa vườn hoa. Khoảnh khắc chỉ xảy ra một lần."','col09.desc':'Bộ ảnh cưới mang vẻ trong trẻo và thuần khiết giữa vườn hoa rực rỡ, ánh sáng tự nhiên, màu sắc tươi sáng, cảm xúc thật. Một chương ký ức đáng được lưu giữ mãi mãi.',
-'col14.tagline':'"Áo dài trắng đỏ ngày đám hỏi. Duyên phận bắt đầu từ đây."','col14.desc':'Ngày đám hỏi thiêng liêng được lưu lại bằng những khung hình trang trọng, ấm áp, đúng chất Việt. Áo dài trắng, sắc đỏ may mắn, nụ cười rạng rỡ đón một chặng đường mới.',
-'col18.tagline':'"Hanfu hồng, tuyết rơi, hoa sen. Một mùa đông không thuộc về thực tại."','col18.desc':'Concept cổ trang lấy cảm hứng từ hội họa Trung Hoa. Tà hanfu hồng lay nhẹ giữa tuyết trắng và hoa sen tinh khôi. Từng khung hình như bước ra từ tranh thủy mặc.',
-'col20.tagline':'"Áo dài kem giữa biệt thự Pháp. Nét Việt trong không gian Tây."','col20.desc':'Biệt thự kiến trúc Pháp cổ điển làm phông nền cho tà áo dài kem thanh lịch. Sự kết hợp giữa truyền thống Việt và không gian châu Âu tạo ra những khung hình tinh tế, không trùng lặp.',
+'col01.title':'Vàng Nghệ Phố Cổ','col01.tagline':'"Sắc vàng nghệ giữa lòng phố cũ, nhẹ nhàng mà không thể quên."','col01.desc':'Áo dài vàng nghệ trên nền phố cổ rêu phong, tông màu ấm, ánh sáng tự nhiên. Một buổi chiều đứng yên giữa dòng thời gian đang chảy.',
+'col02.title':'Mùa Xuân Đỏ Thắm','col02.tagline':'"Cheongsam đỏ, hoa lan trắng. Tết đến trong sắc hoa."','col02.desc':'Sắc đỏ thắm của cheongsam gặp hoa lan mùa xuân. Bộ ảnh Tết mang hơi thở truyền thống phương Đông, trang nhã mà rực rỡ, gợi nhớ những mùa Tết xưa.',
+'col03.title':'Nữ Thần Vàng','col03.tagline':'"Vàng không phải màu sắc. Vàng là thái độ."','col03.desc':'Bộ ảnh tôn vinh sức mạnh và vẻ đẹp của người phụ nữ. Ánh sáng vàng rực, trang phục quyền năng, thần thái tự tin, tất cả tạo nên một bộ ảnh không lẫn vào ai.',
+'col06.title':'Hoài Niệm Phố Cổ','col06.tagline':'"Hai người bạn, một buổi chiều phố cũ, và ký ức không bao giờ phai."','col06.desc':'Hai cô gái trong tà áo dài retro, bước chầm chậm qua những con phố cũ. Họ không cần tạo dáng cồng kềnh, chỉ cần khoảnh khắc thật là đủ. Khung hình đã đủ nói lên tất cả.',
+'col07.title':'Hồng Victorien','col07.tagline':'"Salon kiểu Pháp, váy hồng bồng bềnh. Một buổi chiều châu Âu giữa lòng Việt."','col07.desc':'Không gian Salon Victorian sang trọng, váy đầm hồng lộng lẫy, từng khung hình như thước phim điện ảnh châu Âu.',
+'col09.title':'Trắng Tinh Vườn Hoa','col09.tagline':'"Váy cưới trắng giữa vườn hoa. Khoảnh khắc chỉ xảy ra một lần."','col09.desc':'Bộ ảnh cưới mang vẻ trong trẻo và thuần khiết giữa vườn hoa rực rỡ, ánh sáng tự nhiên, màu sắc tươi sáng, cảm xúc thật. Một chương ký ức đáng được lưu giữ mãi mãi.',
+'col14.title':'Duyên Đầu Đời','col14.tagline':'"Áo dài trắng đỏ ngày đám hỏi. Duyên phận bắt đầu từ đây."','col14.desc':'Ngày đám hỏi thiêng liêng được lưu lại bằng những khung hình trang trọng, ấm áp, đúng chất Việt. Áo dài trắng, sắc đỏ may mắn, nụ cười rạng rỡ đón một chặng đường mới.',
+'col18.title':'Hanfu Tuyết Rơi','col18.tagline':'"Hanfu hồng, tuyết rơi, hoa sen. Một mùa đông không thuộc về thực tại."','col18.desc':'Concept cổ trang lấy cảm hứng từ hội họa Trung Hoa. Tà hanfu hồng lay nhẹ giữa tuyết trắng và hoa sen tinh khôi. Từng khung hình như bước ra từ tranh thủy mặc.',
+'col20.title':'Kem Pháp Cổ Điển','col20.tagline':'"Áo dài kem giữa biệt thự Pháp. Nét Việt trong không gian Tây."','col20.desc':'Biệt thự kiến trúc Pháp cổ điển làm phông nền cho tà áo dài kem thanh lịch. Sự kết hợp giữa truyền thống Việt và không gian châu Âu tạo ra những khung hình tinh tế, không trùng lặp.',
 'price.eyebrow':'Bảng giá','price.h2':'Ba gói, <i>ba câu chuyện</i>','price.desc':'Từ một khoảnh khắc đẹp đến di sản lưu giữ mãi mãi. Mỗi gói đã bao gồm đầy đủ trang phục, makeup và retouch. Không phụ thu, không vặn vẹo.','price.unit':'đồng / buổi chụp',
 'price.01.tag':'Gói 01','price.01.title':'Khoảnh Khắc','price.01.sub':'Ghi lại một khoảnh khắc đẹp, nhẹ nhàng và trọn vẹn.','price.01.li1':'1 concept trang phục của AURA','price.01.li2':'Makeup & làm tóc cơ bản','price.01.li3':'10 ảnh retouch kỹ lưỡng','price.01.li4':'File gốc độ phân giải cao','price.01.li5':'Ekip hỗ trợ tạo dáng','price.01.li6':'Giao ảnh trong ngày',
 'price.02.tag':'Gói 02 · Phổ biến nhất','price.02.title':'Câu Chuyện','price.02.sub':'Kể câu chuyện của bạn qua từng khung hình tinh tế.','price.02.li1':'2 concept trang phục của AURA','price.02.li2':'Makeup & làm tóc nâng cao','price.02.li3':'20 ảnh retouch kỹ lưỡng','price.02.li4':'File gốc độ phân giải cao','price.02.li5':'Ekip hỗ trợ tạo dáng xuyên suốt','price.02.li6':'Tư vấn concept qua Zalo trước','price.02.li7':'Giao ảnh trong ngày',
@@ -1428,6 +1323,7 @@ function setLang(lang){
   document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
   localStorage.setItem('lang',lang);
   if(curAlbum){
+    document.getElementById('alb-title').textContent=ALBUM_TITLES[lang][curAlbum._key];
     document.getElementById('alb-photo-count').textContent=curAlbum.files.length+' '+(T[lang]['alb.photos']||'photos');
   }
 }
