@@ -54,7 +54,8 @@ img{display:block;max-width:100%;height:auto}
 
 /* ── FLOAT ── */
 .float-wrap{position:fixed;bottom:26px;right:20px;z-index:999;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
-.float-btn{padding:10px 20px;border-radius:30px;font-size:12.5px;font-weight:500;color:#fff;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.18);transition:transform .2s;white-space:nowrap;font-family:var(--sans)}
+.float-btn{display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:30px;font-size:12.5px;font-weight:500;color:#fff;cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.18);transition:transform .2s;white-space:nowrap;font-family:var(--sans)}
+.float-btn svg{width:15px;height:15px;stroke:#fff;flex-shrink:0}
 .float-btn:hover{transform:translateY(-2px)}
 .float-zalo{background:#0068FF}
 .float-phone{background:#27AE60}
@@ -357,8 +358,8 @@ img{display:block;max-width:100%;height:auto}
 
 <!-- FLOAT -->
 <div class="float-wrap">
-  <a class="float-btn float-zalo" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" data-i18n="float.zalo">Zalo chat</a>
-  <a class="float-btn float-phone" href="tel:0346108711" data-i18n="float.call">Call now</a>
+  <a class="float-btn float-zalo" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" data-i18n="float.zalo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:18px;height:18px;flex-shrink:0"><rect width="40" height="40" rx="9" fill="#0068FF"/><rect x="5" y="7" width="30" height="20" rx="5" fill="white"/><polygon points="8,27 5,37 19,27" fill="white"/><text x="20" y="21.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="800" fill="#0068FF">Zalo</text></svg>Zalo chat</a>
+  <a class="float-btn float-phone" href="tel:0346108711" data-i18n="float.call"><i data-lucide="phone"></i>Call now</a>
 </div>
 
 <!-- NAV -->
@@ -1022,11 +1023,8 @@ img{display:block;max-width:100%;height:auto}
       </div>
     </div>
     <div class="footer-social">
-      <a class="footer-social-link" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" title="Zalo">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
-          <rect width="28" height="28" rx="7" fill="#0068FF"/>
-          <text x="14" y="19.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff" letter-spacing="-0.5">Zalo</text>
-        </svg>
+      <a class="footer-social-link" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer" title="Zalo" style="display:inline-flex;align-items:center;gap:7px">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:22px;height:22px;flex-shrink:0"><rect width="40" height="40" rx="9" fill="#0068FF"/><rect x="5" y="7" width="30" height="20" rx="5" fill="white"/><polygon points="8,27 5,37 19,27" fill="white"/><text x="20" y="21.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="800" fill="#0068FF">Zalo</text></svg>
       </a>
       <span class="footer-social-sep">·</span>
       <a class="footer-social-link" href="https://zalo.me/0346108711" target="_blank" rel="noopener noreferrer">034 610 8711</a>
@@ -1329,5 +1327,7 @@ function setLang(lang){
 }
 setLang(localStorage.getItem('lang')||'en');
 </script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
