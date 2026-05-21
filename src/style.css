@@ -300,7 +300,7 @@ img{display:block;max-width:100%;height:auto}
   .about-img-badge{bottom:-18px;right:-18px;padding:22px 26px}
   .usp-grid{grid-template-columns:1fr}
   .usp-item{padding:44px 36px}
-  .col-groups{grid-template-columns:1fr;gap:36px}
+  .col-groups{grid-template-columns:1fr;gap:36px;padding:0 28px}
   .pricing-grid{grid-template-columns:1fr;max-width:440px}
   .process-grid{grid-template-columns:repeat(2,1fr)}
   .faq-inner{grid-template-columns:1fr;gap:56px}
@@ -324,7 +324,7 @@ img{display:block;max-width:100%;height:auto}
   .about-img-badge strong{font-size:32px}
   .usp-item{padding:36px 22px}
   .svc-grid{grid-template-columns:1fr}
-  .col-groups{gap:24px}
+  .col-groups{gap:24px;padding:0 22px}
   .col-group{gap:6px}
   .process-grid{grid-template-columns:1fr}
   .process-step{padding:32px 22px}
