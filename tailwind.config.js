@@ -5,13 +5,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        aura: '#5B90C8',
-        'aura-light': '#9FD7F9',
-        'aura-dark': '#1B2B52'
+        aura: '#4A7CC7',
+        'aura-light': '#90B8E8',
+        'aura-dark': '#0C1A4A'
       },
       fontFamily: {
-        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
-        sans: ['Inter', 'sans-serif']
+        serif: ['Playfair Display', 'Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['DM Sans', 'sans-serif']
       }
     }
   }
