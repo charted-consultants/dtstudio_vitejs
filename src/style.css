@@ -269,6 +269,12 @@ img{display:block;max-width:100%;height:auto}
 .faq-head .body-text{max-width:320px}
 .faq-list{display:flex;flex-direction:column}
 .faq-item{border-bottom:1px solid var(--border)}
+.faq-item.reveal:nth-child(1){transition-delay:.05s}
+.faq-item.reveal:nth-child(2){transition-delay:.15s}
+.faq-item.reveal:nth-child(3){transition-delay:.25s}
+.faq-item.reveal:nth-child(4){transition-delay:.35s}
+.faq-item.reveal:nth-child(5){transition-delay:.45s}
+.faq-item.reveal:nth-child(6){transition-delay:.55s}
 .faq-q{display:flex;justify-content:space-between;align-items:center;padding:24px 0;cursor:pointer;gap:16px}
 .faq-q-text{font-family:'Patrick Hand',cursive;font-size:19px;font-weight:400;color:var(--dark);line-height:1.4}
 .faq-icon{width:20px;height:20px;flex-shrink:0;position:relative}
