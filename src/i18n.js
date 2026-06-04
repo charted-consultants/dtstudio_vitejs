@@ -95,6 +95,19 @@ export const T = {
     'col19.tagline': '"Warm red light, a space just for two. Love is most beautiful when it can be seen."',
     'col19.desc':    'Warm red light fills the entire Valentine space. More romantic and bold than my other concepts. Made for couples who want photos that actually look like love, unguarded and real.',
 
+    // Awards
+    'awards.eyebrow':  'Awards & Recognition',
+    'awards.h2':       'Works that have <i>been honoured</i>',
+    'awards.01.badge': 'Award-winning photograph',
+    'awards.01.title': 'Children of Hà Giang',
+    'awards.01.org':   'Vietnam Fine Art Photography Contest & Exhibition · Ministry of Culture, Sports and Tourism',
+    'awards.02.badge': 'Award-winning photograph',
+    'awards.02.title': 'Vietnam Fine Art Photography 2020',
+    'awards.02.org':   'Vietnam Association of Photographic Artists · Ministry of Culture, Sports and Tourism',
+    'awards.03.badge': 'Awards ceremony',
+    'awards.03.title': 'Opening Ceremony & Prize Presentation',
+    'awards.03.org':   'Vietnam Fine Art Photography Contest & Exhibition 2020',
+
     // Pricing
     'price.eyebrow':   'Pricing',
     'price.h2':        'Three packages, <i>three stories</i>',
@@ -322,6 +335,19 @@ export const T = {
     'col19.title':   'Đèn Đỏ Valentine',
     'col19.tagline': '"Ánh đèn đỏ ấm, không gian chỉ của hai người. Tình yêu đẹp nhất khi được nhìn thấy."',
     'col19.desc':    'Ánh đèn đỏ ấm áp bao phủ toàn bộ không gian Valentine. Lãng mạn và táo bạo hơn các concept khác của mình. Dành cho những cặp đôi muốn có bộ ảnh tình yêu ra đúng tình yêu, không e dè, không giữ kẽ.',
+
+    // Awards
+    'awards.eyebrow':  'Giải thưởng',
+    'awards.h2':       'Những tác phẩm <i>được vinh danh</i>',
+    'awards.01.badge': 'Tác phẩm đạt giải',
+    'awards.01.title': 'Những em bé Hà Giang',
+    'awards.01.org':   'Cuộc thi &amp; Triển lãm Ảnh Nghệ Thuật Việt Nam · Bộ Văn hóa, Thể thao và Du lịch',
+    'awards.02.badge': 'Tác phẩm đạt giải',
+    'awards.02.title': 'Ảnh Nghệ Thuật Việt Nam 2020',
+    'awards.02.org':   'Hội Nghệ Sĩ Nhiếp Ảnh Việt Nam · Bộ Văn hóa, Thể thao và Du lịch',
+    'awards.03.badge': 'Lễ trao giải',
+    'awards.03.title': 'Lễ Khai Mạc &amp; Trao Giải Thưởng',
+    'awards.03.org':   'Cuộc thi và Triển lãm Ảnh Nghệ Thuật Việt Nam 2020',
 
     // Pricing
     'price.eyebrow':   'Bảng giá',
