@@ -107,6 +107,12 @@ export const T = {
     'awards.03.badge': 'Awards ceremony',
     'awards.03.title': 'Opening Ceremony & Prize Presentation',
     'awards.03.org':   'Vietnam Fine Art Photography Contest & Exhibition 2020',
+    'awards.04.badge': 'Reference letter',
+    'awards.04.title': 'Professional photography partner',
+    'awards.04.org':   'Su Kien Xanh · 102 Pho Vong, Hanoi. Wedding, pre-wedding and event photography since July 2021.',
+    'awards.05.badge': 'Press coverage',
+    'awards.05.title': 'Golden Rice Season in the Northwest Mountains',
+    'awards.05.org':   'Lao Dong Newspaper · Feature on the photography work and journey of Duong Thi Hang in the Northwest highlands.',
 
     // Pricing
     'price.eyebrow':   'Pricing',
@@ -346,8 +352,14 @@ export const T = {
     'awards.02.title': 'Ảnh Nghệ Thuật Việt Nam 2020',
     'awards.02.org':   'Hội Nghệ Sĩ Nhiếp Ảnh Việt Nam · Bộ Văn hóa, Thể thao và Du lịch',
     'awards.03.badge': 'Lễ trao giải',
-    'awards.03.title': 'Lễ Khai Mạc &amp; Trao Giải Thưởng',
+    'awards.03.title': 'Lễ khai mạc và trao giải thưởng',
     'awards.03.org':   'Cuộc thi và Triển lãm Ảnh Nghệ Thuật Việt Nam 2020',
+    'awards.04.badge': 'Thư xác nhận',
+    'awards.04.title': 'Nhiếp ảnh gia hợp tác chuyên nghiệp',
+    'awards.04.org':   'Sự Kiện Xanh · 102 Phố Vọng, Hà Nội. Chuyên hỗ trợ chụp ảnh đám cưới, prewedding và sự kiện từ tháng 7 năm 2021.',
+    'awards.05.badge': 'Báo chí đưa tin',
+    'awards.05.title': 'Rộn ràng mùa vàng Tây Bắc',
+    'awards.05.org':   'Báo Lao Động · Bài viết giới thiệu tác phẩm và hành trình nhiếp ảnh của Dương Thị Hằng tại vùng núi Tây Bắc.',
 
     // Pricing
     'price.eyebrow':   'Bảng giá',
