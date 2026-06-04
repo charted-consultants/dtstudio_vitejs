@@ -250,7 +250,7 @@ export const T = {
     // Hero
     'hero.eyebrow': 'Nhiếp ảnh gia Dương Thị Hằng · An Thi, Hưng Yên · từ 2018',
     'hero.h1':      'Mỗi bức ảnh<br/><i>là một câu chuyện</i>',
-    'hero.sub':     'Mình không cố tạo ra một phiên bản "đẹp hơn" của bạn. Mình chỉ muốn bạn nhìn lại tấm ảnh và nhận ra ngay: đúng rồi, đây là mình. Bình yên và thật, như một buổi chiều ở Hưng Yên.',
+    'hero.sub':     'Mình không cố tạo ra một phiên bản "đẹp hơn" của bạn. Mình chỉ muốn bạn nhìn lại và nhận ra ngay: đúng rồi, đây là mình, bình yên và thật như một buổi chiều ở Hưng Yên.',
     'hero.btn1':    'Xem bộ sưu tập',
     'hero.btn2':    'Đặt lịch chụp',
 
