@@ -276,7 +276,7 @@ export const T = {
 
     // About
     'about.eyebrow': 'Câu chuyện của mình',
-    'about.h2':      'Người Hưng Yên, học chụp ảnh bằng cả tim',
+    'about.h2':      'Người Hưng Yên, học chụp ảnh bằng cả trái tim',
     'about.p1':      'Mình là Hằng, sinh ra ở An Thi, Hưng Yên. Từ nhỏ đã hay để ý, để ý cái cách ánh sáng buổi chiều đổ qua rặng tre, cái cách người ta nhìn nhau mà không nói gì cả. Người Hưng Yên vốn thế: cần cù, không quen khoa trương, nhưng sâu bên trong là cả một vùng cảm xúc đang chờ được nhìn thấy. Năm 2018, mình mở Blue Moon Studio, không phải vì muốn có thêm một studio chụp ảnh ở Hưng Yên, mà vì mình muốn làm đúng một việc: giúp người đứng trước ống kính của mình thấy chính mình, thật sự thấy, có khi là lần đầu tiên trong đời.',
     'about.quote':   '"Mình không chụp vẻ đẹp. Mình chụp đúng câu chuyện của người đang đứng trước ống kính."',
     'about.p2':      'Từ 2018 đến nay, mình đã ngồi lắng nghe rất nhiều người. Có cô gái đến một mình, tay run lẩy bẩy vì chưa bao giờ chụp ảnh chân dung bài bản. Có cặp đôi vừa ngại vừa thương nhau mà không biết thể hiện trước máy ảnh như thế nào. Có người mẹ muốn có một tấm ảnh áo dài để dành lại cho con. Mỗi người một chuyện. Mình lắng nghe hết, rồi mới cầm máy. Đó là cách mình làm từ ngày đầu, và mình chưa bao giờ đổi.',
