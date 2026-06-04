@@ -347,7 +347,7 @@ export const T = {
     'awards.h2':       'Những tác phẩm <i>được vinh danh</i>',
     'awards.01.badge': 'Tác phẩm đạt giải',
     'awards.01.title': 'Những em bé Hà Giang',
-    'awards.01.org':   'Cuộc thi &amp; Triển lãm Ảnh Nghệ Thuật Việt Nam · Bộ Văn hóa, Thể thao và Du lịch',
+    'awards.01.org':   'Cuộc thi và Triển lãm Ảnh Nghệ Thuật Việt Nam, Bộ Văn hóa, Thể thao và Du lịch',
     'awards.02.badge': 'Tác phẩm đạt giải',
     'awards.02.title': 'Ảnh Nghệ Thuật Việt Nam 2020',
     'awards.02.org':   'Hội Nghệ Sĩ Nhiếp Ảnh Việt Nam · Bộ Văn hóa, Thể thao và Du lịch',
