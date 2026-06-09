@@ -1,12 +1,14 @@
-name: Deploy DT Studio
+name: Build Check
 
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,21 +21,3 @@ jobs:
       - run: npm ci
 
       - run: npm run build
-
-      - name: Clear old assets on server
-        uses: appleboy/ssh-action@master
-        with:
-          host: 143.110.167.193
-          username: root
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: rm -rf /var/www/dtstudio/assets
-
-      - name: Deploy dist to /var/www/dtstudio
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: 143.110.167.193
-          username: root
-          key: ${{ secrets.VPS_SSH_KEY }}
-          source: "dist/*"
-          target: "/var/www/dtstudio"
-          strip_components: 1

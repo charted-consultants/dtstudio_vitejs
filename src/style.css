@@ -24,8 +24,8 @@ img{display:block;max-width:100%;height:auto}
 /* ── UTILS ── */
 .container{max-width:1200px;margin:0 auto;padding:0 48px}
 .eyebrow{font-size:10px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:20px}
-.h2{font-family:'Dancing Script',cursive;font-size:clamp(40px,5vw,68px);font-weight:400;color:var(--dark);line-height:1.15}
-.h2 i{font-style:italic}
+.h2{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5.5vw,72px);font-weight:300;color:var(--dark);line-height:1.15}
+.h2 i{font-style:normal}
 .body-text{font-family:'Patrick Hand',cursive;font-size:17px;font-weight:400;color:var(--muted);line-height:1.95;margin-top:18px;max-width:560px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;font-size:12px;font-weight:500;cursor:pointer;transition:all .22s;border:none;font-family:var(--sans);letter-spacing:.6px;text-transform:uppercase}
 .btn-dark{background:var(--dark);color:#fff}
@@ -103,6 +103,22 @@ img{display:block;max-width:100%;height:auto}
 .lang-sep-bar{color:rgba(255,255,255,.2);font-size:11px;line-height:1}
 #nav.solid .lang-sep-bar{color:rgba(6,16,42,.22)}
 
+/* Sidebar (desktop) */
+.sidebar{display:none;position:fixed;left:0;top:0;width:200px;height:100vh;background:rgba(255,255,255,.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);flex-direction:column;padding:44px 28px 36px;z-index:900;overflow-y:auto}
+.sb-logo{font-family:'Patrick Hand',cursive;font-size:17px;font-weight:400;letter-spacing:3px;color:var(--dark);text-transform:uppercase;margin-bottom:52px;display:block;line-height:1}
+.sb-logo .dot{color:var(--gold)}
+.sb-nav{display:flex;flex-direction:column;flex:1}
+.sb-nav a{font-size:13px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase;color:rgba(0,0,0,.45);padding:13px 0;transition:color .2s;border-bottom:1px solid rgba(0,0,0,.08)}
+.sb-nav a:hover{color:var(--dark)}
+.sb-bottom{display:flex;flex-direction:column;gap:14px;padding-top:28px}
+.sb-tel{font-size:11px;color:rgba(0,0,0,.45);letter-spacing:.5px;font-family:var(--sans);transition:color .2s}
+.sb-tel:hover{color:var(--dark)}
+.sb-cta{display:block;text-align:center;padding:10px;border:1px solid rgba(0,0,0,.2);font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:rgba(0,0,0,.7);transition:all .2s;font-family:var(--sans)}
+.sb-cta:hover{background:rgba(0,0,0,.06);color:var(--dark)}
+.sidebar .lang-btn{color:rgba(0,0,0,.35)}
+.sidebar .lang-btn.active{color:var(--dark);font-weight:600}
+.sidebar .lang-sep-bar{color:rgba(0,0,0,.2)}
+
 /* Mobile nav */
 .mob-nav{display:none;position:fixed;inset:0;z-index:890;background:var(--bg);flex-direction:column;align-items:center;justify-content:center;gap:40px}
 .mob-nav.open{display:flex}
@@ -161,6 +177,7 @@ img{display:block;max-width:100%;height:auto}
 /* ── ABOUT ── */
 #about{padding:120px 0;background-color:var(--bg2)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+.about-grid.about-text-only{grid-template-columns:1fr;max-width:720px;margin:0 auto}
 .about-img-wrap{
   position:relative;
   padding:22px;
@@ -268,15 +285,15 @@ img{display:block;max-width:100%;height:auto}
 
 /* ── FEEDBACK ── */
 #feedback{background:var(--dark)}
-.fb-inner{max-width:1200px;margin:0 auto;padding:120px 48px}
+.fb-inner{max-width:1200px;margin:0 auto;padding:80px 48px}
 .fb-head{text-align:center;margin-bottom:72px}
 .fb-head .eyebrow{color:var(--gold2)}
 .fb-head .h2{color:#fff}
 .fb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.05)}
-.fb-card{background:var(--dark);padding:48px 40px;display:flex;flex-direction:column;gap:22px;transition:background .25s}
+.fb-card{background:var(--dark);padding:44px 36px;display:flex;flex-direction:column;gap:22px;transition:background .25s}
 .fb-card:hover{background:#0B1840}
 .fb-stars{display:none}
-.fb-quote{font-family:'Dancing Script',cursive;font-style:normal;font-weight:400;font-size:19px;color:rgba(255,255,255,.78);line-height:1.75;flex:1}
+.fb-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:18px;color:rgba(255,255,255,.78);line-height:1.75;flex:1}
 .fb-meta{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07)}
 .fb-avatar{width:40px;height:40px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:13px;font-weight:500;color:#fff;flex-shrink:0}
 .fb-name{font-size:13px;font-weight:500;color:rgba(255,255,255,.72)}
@@ -327,7 +344,7 @@ img{display:block;max-width:100%;height:auto}
 .process-step{background:var(--bg2);padding:48px 36px}
 .process-n{font-family:var(--serif);font-size:52px;font-weight:300;color:var(--border);line-height:1;margin-bottom:22px}
 .process-time{font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px}
-.process-title{font-family:'Caveat',cursive;font-size:22px;font-weight:700;color:var(--dark);margin-bottom:14px;line-height:1.3}
+.process-title{font-family:var(--serif);font-size:22px;font-weight:400;font-style:italic;color:var(--dark);margin-bottom:14px;line-height:1.3}
 .process-desc{font-size:13px;color:var(--muted);line-height:1.9}
 
 /* ── FAQ ── */
@@ -355,12 +372,14 @@ img{display:block;max-width:100%;height:auto}
 
 /* ── CTA BANNER ── */
 #cta-banner{padding:120px 0;background:var(--dark);text-align:center}
-.cta-banner-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold2);font-weight:400;margin-bottom:24px}
-.cta-banner-h{font-family:var(--serif);font-size:clamp(36px,5.5vw,72px);font-weight:300;color:#fff;margin-bottom:16px;line-height:1.08}
-.cta-banner-h i{font-style:italic;color:var(--gold2)}
-.cta-banner-sub{font-size:14px;color:rgba(255,255,255,.38);margin-bottom:52px}
-.cta-banner-phone{font-family:var(--serif);font-size:clamp(36px,5.5vw,68px);font-weight:300;color:#fff;letter-spacing:3px;display:block;margin-bottom:44px}
-.cta-banner-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.cta-banner-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold2);font-weight:400;margin-bottom:28px}
+.cta-banner-h{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,58px);font-weight:300;color:#fff;margin-bottom:20px;line-height:1.2;max-width:640px;margin-left:auto;margin-right:auto}
+.cta-banner-sub{font-size:13px;color:rgba(255,255,255,.35);margin-bottom:52px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.9}
+.cta-banner-contact{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:40px}
+.cta-banner-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.3)}
+.cta-banner-phone{font-family:var(--sans);font-size:clamp(24px,3vw,40px);font-weight:300;color:#fff;letter-spacing:6px}
+.cta-banner-phone:hover{color:var(--gold2)}
+.cta-banner-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 
 /* ── FOOTER ── */
 #footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.05);padding:80px 0 44px}
@@ -415,6 +434,13 @@ img{display:block;max-width:100%;height:auto}
 .alb-next{right:16px}
 
 /* ── RESPONSIVE ── */
+@media(min-width:961px){
+  .sidebar{display:flex}
+  #nav{display:none}
+  body{padding-left:200px}
+  #hero{margin-left:-200px;width:100vw}
+}
+
 @media(max-width:960px){
   .container,.usp-inner,.fb-inner{padding:0 28px}
   .nav-inner{padding:0 28px}
@@ -442,6 +468,7 @@ img{display:block;max-width:100%;height:auto}
   #services,#about,#usp,#collections,#pricing,#process,#faq,#cta-banner{padding:80px 0}
   .container,.usp-inner{padding:0 22px}
   .nav-inner{padding:0 22px}
+  #hero{height:65vh;min-height:420px}
   .hero-scroll{display:none}
   .hero-credit{left:22px;bottom:28px;font-size:9px;letter-spacing:2px}
   .about-img-wrap{padding:12px}
@@ -462,7 +489,9 @@ img{display:block;max-width:100%;height:auto}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;gap:8px;text-align:center}
   .footer-social{justify-content:center}
-  .float-wrap{bottom:calc(22px + env(safe-area-inset-bottom,0px));right:16px}
+  .float-wrap{bottom:calc(22px + env(safe-area-inset-bottom,0px));right:16px;gap:7px}
+  .float-btn{padding:8px 14px;font-size:11.5px;gap:5px}
+  .float-btn svg{width:13px;height:13px}
   .fb-grid{grid-template-columns:1fr}
   .fb-inner{padding:64px 22px}
   .fb-card{padding:36px 28px}

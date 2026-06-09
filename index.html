@@ -15,16 +15,36 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a1a1a'/><text x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='13' font-weight='400' letter-spacing='1' fill='%23c8a96e'>DT</text></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pinyon+Script&family=Dancing+Script:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- SIDEBAR (desktop only) -->
+<aside class="sidebar" id="sidebar">
+  <a class="sb-logo" href="#">DT STUDIO<span class="dot">.</span></a>
+  <nav class="sb-nav">
+    <a href="#collections" data-i18n="nav.collections">Collections</a>
+    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+    <a href="#feedback" data-i18n="nav.stories">Reviews</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  </nav>
+  <div class="sb-bottom">
+    <a class="sb-tel" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer">0942 995 875</a>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+      <span class="lang-sep-bar">|</span>
+      <button class="lang-btn" data-lang="vi" onclick="setLang('vi')">VI</button>
+    </div>
+    <a class="sb-cta" href="#cta-banner" data-i18n="nav.cta">Book Now</a>
+  </div>
+</aside>
+
+<!-- NAV (mobile only) -->
 <nav id="nav">
   <div class="nav-inner">
     <a class="nav-logo" href="#">DT STUDIO<span class="dot">.</span></a>
     <div class="nav-links">
-      <a href="#services" data-i18n="nav.services">Services</a>
       <a href="#collections" data-i18n="nav.collections">Collections</a>
       <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
       <a href="#feedback" data-i18n="nav.stories">Reviews</a>
@@ -46,7 +66,6 @@
   </div>
 </nav>
 <div class="mob-nav" id="mob-nav">
-  <a href="#services" onclick="toggleMob()" data-i18n="nav.services">Services</a>
   <a href="#collections" onclick="toggleMob()" data-i18n="nav.collections">Collections</a>
   <a href="#pricing" onclick="toggleMob()" data-i18n="nav.pricing">Pricing</a>
   <a href="#feedback" onclick="toggleMob()" data-i18n="nav.stories">Reviews</a>
@@ -76,97 +95,13 @@
   <div class="hero-scroll">Scroll</div>
 </section>
 
-<!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-track">
-    <span class="ticker-item" data-i18n-html="ticker.1">Ý Yên<span>·</span>Nam Dinh</span>
-    <span class="ticker-item" data-i18n-html="ticker.2">Portrait<span>·</span>Ao Dai<span>·</span>Wedding</span>
-    <span class="ticker-item" data-i18n-html="ticker.3">Full wardrobe<span>·</span>Makeup included</span>
-    <span class="ticker-item" data-i18n="ticker.4">Photographer Duong Thi Hang</span>
-    <span class="ticker-item" data-i18n="ticker.5">Unlimited shooting time</span>
-    <span class="ticker-item" data-i18n-html="ticker.1">Ý Yên<span>·</span>Nam Dinh</span>
-    <span class="ticker-item" data-i18n-html="ticker.2">Portrait<span>·</span>Ao Dai<span>·</span>Wedding</span>
-    <span class="ticker-item" data-i18n-html="ticker.3">Full wardrobe<span>·</span>Makeup included</span>
-    <span class="ticker-item" data-i18n="ticker.4">Photographer Duong Thi Hang</span>
-    <span class="ticker-item" data-i18n="ticker.5">Unlimited shooting time</span>
-  </div>
-</div>
 
 <!-- SERVICES -->
-<section id="services">
-  <div class="container">
-    <div class="services-head reveal">
-      <span class="eyebrow" data-i18n="svc.eyebrow">Services</span>
-      <h2 class="h2" data-i18n-html="svc.h2">Every concept <i>has its own style</i></h2>
-      <p class="body-text" data-i18n="svc.desc">Choose the story that fits you best. From personal portraits to milestone weddings, AURA is here to listen and walk with you.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card reveal" onclick="openAlbum('dt01')">
-        <img src="/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_01.webp" alt="Tây Bắc mùa hoa"/>
-        <div class="svc-overlay"></div>
-        <div class="svc-card-body">
-          <span class="svc-num">01</span>
-          <div class="svc-name" data-i18n-html="svc.01">Northwest <i>Spring Blossoms</i></div>
-          <div class="svc-line"></div>
-        </div>
-      </div>
-      <div class="svc-card reveal" onclick="openAlbum('dt02')">
-        <img src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_01.webp" alt="Tộc người vùng cao"/>
-        <div class="svc-overlay"></div>
-        <div class="svc-card-body">
-          <span class="svc-num">02</span>
-          <div class="svc-name" data-i18n-html="svc.02">Highland <i>Peoples</i></div>
-          <div class="svc-line"></div>
-        </div>
-      </div>
-      <div class="svc-card reveal" onclick="openAlbum('dt03')">
-        <img src="/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/photo_01.webp" alt="Đồng quê ruộng bậc thang"/>
-        <div class="svc-overlay"></div>
-        <div class="svc-card-body">
-          <span class="svc-num">03</span>
-          <div class="svc-name" data-i18n-html="svc.03">Countryside <i>&amp; Rice Terraces</i></div>
-          <div class="svc-line"></div>
-        </div>
-      </div>
-      <div class="svc-card reveal" onclick="openAlbum('dt04')">
-        <img src="/albums/dt/04%20-%20Ky%20Uc%20Tuoi%20Tho/photo_01.webp" alt="Ký ức tuổi thơ"/>
-        <div class="svc-overlay"></div>
-        <div class="svc-card-body">
-          <span class="svc-num">04</span>
-          <div class="svc-name" data-i18n-html="svc.04">Childhood <i>Memories</i></div>
-          <div class="svc-line"></div>
-        </div>
-      </div>
-      <div class="svc-card reveal" onclick="openAlbum('dt05')">
-        <img src="/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_01.webp" alt="Ngư dân nhìn từ trên cao"/>
-        <div class="svc-overlay"></div>
-        <div class="svc-card-body">
-          <span class="svc-num">05</span>
-          <div class="svc-name" data-i18n-html="svc.05">Fishermen <i>from Above</i></div>
-          <div class="svc-line"></div>
-        </div>
-      </div>
-      <div class="svc-card reveal" onclick="openAlbum('dt08')">
-        <img src="/albums/dt/08%20-%20Lang%20Nghe%20Truyen%20Thong/photo_01.webp" alt="Làng nghề truyền thống"/>
-        <div class="svc-overlay"></div>
-        <div class="svc-card-body">
-          <span class="svc-num">06</span>
-          <div class="svc-name" data-i18n-html="svc.08">Traditional <i>Crafts</i></div>
-          <div class="svc-line"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-img-wrap reveal">
-        <img class="about-img" src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_01.webp" alt="Nhiếp ảnh gia Trần Đình Triệu"/>
-
-      </div>
+    <div class="about-grid about-text-only">
       <div class="about-text reveal">
         <span class="eyebrow" data-i18n="about.eyebrow">About AURA Studio</span>
         <h2 class="h2" data-i18n-html="about.h2">A studio that tells stories<br/><i>through light</i></h2>
@@ -258,7 +193,7 @@
 
   <div class="col-groups">
     <div class="col-group-item reveal" onclick="openAlbum('dt01')">
-      <img src="/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_01.webp" alt="Tây Bắc · Mùa Hoa" loading="lazy"/>
+      <img src="/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_05.webp" alt="Tây Bắc · Mùa Hoa" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col01.title">Tây Bắc · Mùa Hoa</h3>
@@ -266,7 +201,7 @@
       </div>
     </div>
     <div class="col-group-item reveal" onclick="openAlbum('dt02')">
-      <img src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_01.webp" alt="Tộc Người Vùng Cao" loading="lazy"/>
+      <img src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_02.webp" alt="Tộc Người Vùng Cao" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col02.title">Tộc Người Vùng Cao</h3>
@@ -282,7 +217,7 @@
       </div>
     </div>
     <div class="col-group-item reveal" onclick="openAlbum('dt04')">
-      <img src="/albums/dt/04%20-%20Ky%20Uc%20Tuoi%20Tho/photo_01.webp" alt="Ký Ức Tuổi Thơ" loading="lazy"/>
+      <img src="/albums/dt/04%20-%20Ky%20Uc%20Tuoi%20Tho/photo_04.webp" alt="Ký Ức Tuổi Thơ" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col04.title">Ký Ức Tuổi Thơ</h3>
@@ -290,7 +225,7 @@
       </div>
     </div>
     <div class="col-group-item reveal" onclick="openAlbum('dt05')">
-      <img src="/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_01.webp" alt="Ngư Dân · Nhìn Từ Trên Cao" loading="lazy"/>
+      <img src="/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_05.webp" alt="Ngư Dân · Nhìn Từ Trên Cao" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col05.title">Ngư Dân · Nhìn Từ Trên Cao</h3>
@@ -298,7 +233,7 @@
       </div>
     </div>
     <div class="col-group-item reveal" onclick="openAlbum('dt06')">
-      <img src="/albums/dt/06%20-%20Cho%20Bien%20-%20Ben%20Canh/photo_01.webp" alt="Chợ Biển · Bến Cảng" loading="lazy"/>
+      <img src="/albums/dt/06%20-%20Cho%20Bien%20-%20Ben%20Canh/photo_02.webp" alt="Chợ Biển · Bến Cảng" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col06.title">Chợ Biển · Bến Cảng</h3>
@@ -306,7 +241,7 @@
       </div>
     </div>
     <div class="col-group-item reveal" onclick="openAlbum('dt07')">
-      <img src="/albums/dt/07%20-%20Nghe%20Bien/photo_01.webp" alt="Nghề Biển" loading="lazy"/>
+      <img src="/albums/dt/07%20-%20Nghe%20Bien/photo_02.webp" alt="Nghề Biển" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col07.title">Nghề Biển</h3>
@@ -314,7 +249,7 @@
       </div>
     </div>
     <div class="col-group-item reveal" onclick="openAlbum('dt08')">
-      <img src="/albums/dt/08%20-%20Lang%20Nghe%20Truyen%20Thong/photo_01.webp" alt="Làng Nghề Truyền Thống" loading="lazy"/>
+      <img src="/albums/dt/08%20-%20Lang%20Nghe%20Truyen%20Thong/photo_03.webp" alt="Làng Nghề Truyền Thống" loading="lazy"/>
       <div class="col-group-overlay">
         <span class="col-group-year">DT STUDIO</span>
         <h3 class="col-group-title" data-i18n="col08.title">Làng Nghề Truyền Thống</h3>
@@ -338,7 +273,7 @@
         <span class="price-tag-name" data-i18n="price.01.tag">Gói 01</span>
         <div class="price-title" data-i18n="price.01.title">The Moment</div>
         <div class="price-sub" data-i18n="price.01.sub">Buổi chụp cả ngày — một concept, một câu chuyện.</div>
-        <div class="price-amount">3.800.000</div>
+        <div class="price-amount">11.950.000</div>
         <div class="price-unit" data-i18n="price.unit">VND / buổi chụp</div>
         <div class="price-sep"></div>
         <ul class="price-list">
@@ -354,7 +289,7 @@
         <span class="price-tag-name" data-i18n="price.02.tag">Gói 02 · Được chọn nhiều nhất</span>
         <div class="price-title" data-i18n="price.02.title">Phóng Sự · Tài Liệu</div>
         <div class="price-sub" data-i18n="price.02.sub">Chụp phóng sự và ảnh tài liệu theo đặt hàng cho báo chí, tổ chức phi lợi nhuận và truyền thông.</div>
-        <div class="price-amount">6.500.000</div>
+        <div class="price-amount">19.120.000</div>
         <div class="price-unit" data-i18n="price.unit">VND / buổi chụp</div>
         <div class="price-sep"></div>
         <ul class="price-list">
@@ -370,8 +305,10 @@
       </div>
       <div class="price-card reveal">
         <span class="price-tag-name" data-i18n="price.03.tag">Gói 03 · Cao Cấp</span>
-        <div class="price-title" data-i18n="price.03.title">Thương Mại · Quảng Cáo</div>
+        <div class="price-title" data-i18n="price.03.title">Thương Mại</div>
         <div class="price-sub" data-i18n="price.03.sub">Sản xuất ảnh theo yêu cầu cho chiến dịch quảng cáo, thương hiệu và dự án tổ chức.</div>
+        <div class="price-amount">30.592.000</div>
+        <div class="price-unit" data-i18n="price.unit">VND / buổi chụp</div>
         <div class="price-sep"></div>
         <ul class="price-list">
           <li data-i18n="price.03.li1">Sản xuất nhiều ngày, toàn quốc</li>
@@ -380,7 +317,7 @@
           <li data-i18n="price.03.li4">Bản quyền thương mại, mọi định dạng</li>
           <li data-i18n="price.03.li5">Brief sáng tạo và storyboard chi tiết</li>
         </ul>
-        <button class="price-cta" onclick="location.href='#cta-banner'" data-i18n="price.cta">Liên hệ báo giá</button>
+        <button class="price-cta" onclick="location.href='#cta-banner'" data-i18n="price.cta.book">Liên hệ đặt lịch</button>
       </div>
     </div>
   </div>
@@ -586,12 +523,15 @@
 <section id="cta-banner">
   <div class="container" style="text-align:center">
     <div class="cta-banner-eyebrow reveal" data-i18n="cta.eyebrow">Book a session</div>
-    <h2 class="cta-banner-h reveal" data-i18n-html="cta.h2">Your story<br/><i>is waiting to be told</i></h2>
-    <p class="cta-banner-sub reveal" data-i18n="cta.sub">Let the AURA team listen and find the concept that fits you best. No rush, no pressure.</p>
-    <a class="cta-banner-phone reveal" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer">0942 995 875</a>
+    <h2 class="cta-banner-h reveal" data-i18n="cta.h2">Your project starts with a message.</h2>
+    <p class="cta-banner-sub reveal" data-i18n="cta.sub">Documentary commissions, print licensing, or editorial assignments — reach out and I'll respond within one business day.</p>
+    <div class="cta-banner-contact reveal">
+      <span class="cta-banner-label" data-i18n="cta.label">Zalo · Call</span>
+      <a class="cta-banner-phone" href="tel:0942995875">0942 995 875</a>
+    </div>
     <div class="cta-banner-btns reveal">
-      <a class="btn btn-ghost" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer" data-i18n="cta.zalo">Message us on Zalo</a>
-      <a class="btn" style="background:var(--gold2);color:#0C1A4A" href="tel:0942995875" data-i18n="cta.call">Call for consultation</a>
+      <a class="btn btn-ghost" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer" data-i18n="cta.zalo">Zalo</a>
+      <a class="btn btn-ghost" href="tel:0942995875" data-i18n="cta.call">Call</a>
     </div>
   </div>
 </section>
@@ -603,16 +543,6 @@
       <div>
         <div class="footer-brand-name">DT STUDIO<span class="dot">.</span></div>
         <p class="footer-brand-desc" data-i18n="footer.brand.desc">Documentary &amp; fine art photography by Trần Đình Triệu, Hà Nội. Over a decade photographing Vietnam's people, landscapes, and way of life.</p>
-      </div>
-      <div>
-        <div class="footer-title" data-i18n="footer.col1">Services</div>
-        <div class="footer-links">
-          <a href="#services" data-i18n="footer.svc.01">Portrait photography</a>
-          <a href="#services" data-i18n="footer.svc.02">Ao dai traditional</a>
-          <a href="#services" data-i18n="footer.svc.03">Wedding &amp; engagement</a>
-          <a href="#services" data-i18n="footer.svc.04">Fashion &amp; editorial</a>
-          <a href="#services" data-i18n="footer.svc.05">Muse &amp; ancient costume</a>
-        </div>
       </div>
       <div>
         <div class="footer-title" data-i18n="footer.col2">Explore</div>

@@ -6,6 +6,10 @@ export const T = {
     'float.zalo': 'Zalo chat',
     'float.call': 'Call now',
 
+    // Sidebar
+    'sidebar.sub':  'Documentary Photography',
+    'sidebar.bio':  'Tran Dinh Trieu is a documentary photographer based in Ha Noi. Over a decade capturing the real beauty of Viet Nam.',
+
     // Nav
     'nav.services':    'Portfolio',
     'nav.collections': 'Collections',
@@ -18,14 +22,14 @@ export const T = {
     'mob.cta':         'Contact now',
 
     // Hero
-    'hero.eyebrow': 'Photographer Trần Đình Triệu · Hà Nội',
+    'hero.eyebrow': 'Photographer Tran Dinh Trieu · Ha Noi',
     'hero.h1':      'The real moment,<br/><i>stays forever</i>',
     'hero.sub':     "I don't set up scenes. I wait for life to reveal itself, then I press the shutter. From the misty highlands of the Northwest to the fishing villages along the coast, every frame I take is a true story of Vietnam.",
     'hero.btn1':    'View collections',
     'hero.btn2':    'Contact me',
 
     // Ticker
-    'ticker.1': 'Hà Nội<span>·</span>Vietnam',
+    'ticker.1': 'Ha Noi<span>·</span>Vietnam',
     'ticker.2': 'Documentary<span>·</span>Landscape<span>·</span>Reportage',
     'ticker.3': 'VAPA Silver Medal 2017',
     'ticker.4': 'Vietnam Heritage Photo Awards 2018',
@@ -47,10 +51,10 @@ export const T = {
     // About
     'about.eyebrow': 'About the photographer',
     'about.h2':      'A Hanoian, who photographs Vietnam<br/><i>with quiet devotion</i>',
-    'about.p1':      "My name is Triệu. I am a documentary and fine-art photographer based in Hà Nội. For over a decade I have travelled across Vietnam, from the high mountain villages of Hà Giang and the Northwest to the fishing communities of the central and southern coasts. I am not interested in staged beauty. I wait. I watch. I look for the unguarded moment — the way morning light catches the smoke above a straw roof, the way a child's laughter rings out above the sound of a river.",
-    'about.quote':   '"A photograph is not taken — it is given, by a moment that will never come again."',
+    'about.p1':      "My name is Trieu. I am a documentary and fine-art photographer based in Ha Noi. For over a decade I have travelled across Vietnam, from the high mountain villages of Ha Giang and the Northwest to the fishing communities of the central and southern coasts. I am not interested in staged beauty. I wait. I watch. I look for the unguarded moment, the way morning light catches the smoke above a straw roof, the way a child's laughter rings out above the sound of a river.",
+    'about.quote':   '"A photograph is not taken, it is given, by a moment that will never come again."',
     'about.p2':      "Since 2010, I have documented the lives of ethnic minority peoples, coastal fishing communities, rural children at play, and the rhythms of traditional crafts that are slowly disappearing. My work has been exhibited in national competitions, recognised by the Vietnam Association of Photographic Artists, and featured in Vietnam Heritage magazine. Each photograph in this portfolio is a record: not of what I wanted to see, but of what was actually there.",
-    'about.sig':     'Trần Đình Triệu, documentary photographer · Hà Nội',
+    'about.sig':     'Tran Dinh Trieu, documentary photographer · Ha Noi',
     'about.badge':   'years of documentary work',
 
     // USP
@@ -70,7 +74,7 @@ export const T = {
     'col.btn':     'View collection',
     'col01.title':   'Northwest · Spring Blossoms',
     'col01.tagline': '"When the mountains bloom, Vietnam is most beautiful."',
-    'col01.desc':    "Plum and pear blossoms erupt across the high mountain villages of the Northwest every late winter and early spring. Ethnic minority families go about their lives — ploughing terraces, drying cloth, carrying firewood — against a backdrop of pink and white so vivid it seems unreal. These frames were taken over several trips to Mộc Châu, Hà Giang, and the surrounding highlands.",
+    'col01.desc':    "Plum and pear blossoms erupt across the high mountain villages of the Northwest every late winter and early spring. Ethnic minority families go about their lives — ploughing terraces, drying cloth, carrying firewood — against a backdrop of pink and white so vivid it seems unreal. These frames were taken over several trips to Moc Chau, Ha Giang, and the surrounding highlands.",
     'col02.title':   'Highland Peoples',
     'col02.tagline': '"The mountain peoples carry their world in their colours."',
     'col02.desc':    "The ethnic minority peoples of Vietnam's highlands — Hmong, Dao, Tày, and others — live in ways that have changed little over centuries. This series documents their daily lives: traditional costumes worn not for the camera but for themselves, the work of their hands, the laughter shared between neighbours.",
@@ -97,11 +101,11 @@ export const T = {
     'awards.eyebrow':  'Awards & Recognition',
     'awards.h2':       'Work that has been <i>recognised</i>',
     'awards.01.badge': 'Silver Medal',
-    'awards.01.title': 'Vũ Khúc Trên Sông',
+    'awards.01.title': 'Vu Khuc Tren Song',
     'awards.01.org':   'Vietnam Association of Photographic Artists (VAPA) · Northern Mountain Region Fine Art Photography Festival, 22nd Edition · 2017',
     'awards.02.badge': 'Certificate of Recognition',
-    'awards.02.title': 'Chùa Trấn Quốc',
-    'awards.02.org':   'Vietnam Heritage Photo Awards 2018 · "Những dòng sông Việt Nam" · Hội Di Sản Văn Hoá Việt Nam & Tạp chí Vietnam Heritage. Work exhibited nationally at 8 venues: Bình Thuận, Khánh Hoà, Hà Nội, TP. Hồ Chí Minh, Đà Nẵng.',
+    'awards.02.title': 'Chua Tran Quoc',
+    'awards.02.org':   'Vietnam Heritage Photo Awards 2018 · "Rivers of Vietnam" · Vietnam Cultural Heritage Association & Vietnam Heritage Magazine. Work exhibited nationally across 8 venues: Binh Thuan, Khanh Hoa, Ha Noi, Ho Chi Minh City, Da Nang.',
     'awards.btn.view': 'View award photo',
     'awards.btn.soon': 'Photo coming soon',
 
@@ -142,23 +146,23 @@ export const T = {
     // Reviews
     'fb.eyebrow':      'What clients say',
     'fb.h2':           'Words from people<br/><i>who have worked with me</i>',
-    'fb.01.quote':     '"We commissioned Triệu to document our company\'s journey through the rural communities we work with. The photographs he brought back were extraordinary — honest, intimate, and deeply respectful of the people in them. They told our story far better than we could have written it ourselves."',
-    'fb.01.name':      'Nguyễn Minh Phúc',
+    'fb.01.quote':     '"We commissioned Trieu to document our company\'s journey through the rural communities we work with. The photographs he brought back were extraordinary — honest, intimate, and deeply respectful of the people in them. They told our story far better than we could have written it ourselves."',
+    'fb.01.name':      'Nguyen Minh Phuc',
     'fb.01.service':   'Commissioned Documentary · NGO project',
     'fb.02.quote':     '"I bought three prints from the Highland Peoples series for my office. Every time a visitor sees them, they stop and ask where they came from. The quality of the printing is exceptional, and the images themselves carry a kind of quiet weight you rarely find in photography today."',
-    'fb.02.name':      'Trần Thị Lan Anh',
+    'fb.02.name':      'Tran Thi Lan Anh',
     'fb.02.service':   'Fine Art Prints · Highland Peoples',
-    'fb.03.quote':     '"We licensed several aerial fishing images for a tourism campaign. Triệu was professional, clear about rights and terms, and the images performed extremely well with audiences. We will certainly come back for the next campaign."',
+    'fb.03.quote':     '"We licensed several aerial fishing images for a tourism campaign. Trieu was professional, clear about rights and terms, and the images performed extremely well with audiences. We will certainly come back for the next campaign."',
     'fb.03.name':      'Marketing team · travel brand',
     'fb.03.service':   'Image Licensing · Aerial Fishing series',
     'fb.04.quote':     '"The rice terrace photographs I ordered as prints are among the most beautiful things in my home. The light in them is extraordinary. They look like paintings but they are completely real. I could not be happier."',
-    'fb.04.name':      'Lê Hoàng Giang',
+    'fb.04.name':      'Le Hoang Giang',
     'fb.04.service':   'Fine Art Prints · Rice Terraces',
-    'fb.05.quote':     '"I used Triệu\'s images in an editorial feature on traditional crafts in Vietnam. The photographs were exactly what we needed — technically flawless and with genuine depth of feeling. Working with him on rights and credits was completely straightforward."',
-    'fb.05.name':      'Phạm Thùy Dương',
+    'fb.05.quote':     '"I used Trieu\'s images in an editorial feature on traditional crafts in Vietnam. The photographs were exactly what we needed — technically flawless and with genuine depth of feeling. Working with him on rights and credits was completely straightforward."',
+    'fb.05.name':      'Pham Thuy Duong',
     'fb.05.service':   'Image Licensing · Traditional Crafts',
-    'fb.06.quote':     '"We asked Triệu to document a week-long cultural exchange event in the Northwest. He was everywhere without ever being intrusive — and the photographs captured moments that even we, who were there, had missed. Truly exceptional work."',
-    'fb.06.name':      'Vũ Thanh Hà',
+    'fb.06.quote':     '"We asked Trieu to document a week-long cultural exchange event in the Northwest. He was everywhere without ever being intrusive — and the photographs captured moments that even we, who were there, had missed. Truly exceptional work."',
+    'fb.06.name':      'Vu Thanh Ha',
     'fb.06.service':   'Commissioned Documentary · Cultural event',
 
     // Process
@@ -201,20 +205,21 @@ export const T = {
     'faq.a3':      'This depends entirely on the scope of the project. A single-day documentary shoot, edited and delivered, typically takes 5–7 working days from the shoot date. Longer or more complex projects are scoped individually. I provide a clear timeline in the proposal before any booking is confirmed.',
     'faq.q4':      'Can I licence images for commercial use?',
     'faq.a4':      "Yes. I licence images for editorial, advertising, institutional and commercial use. Terms — including exclusivity, duration, territory and format — are agreed in a written licence agreement. Contact me with the specific image and intended use and I will provide a quote.",
-    'faq.q5':      'Do you travel outside Hà Nội for commissions?',
-    'faq.a5':      "Yes. Much of my work is done across Vietnam — the Northwest highlands, the central coast, the Mekong Delta. Travel costs for out-of-Hà-Nội commissions are included in the project proposal. I am comfortable working in remote or logistically complex locations.",
+    'faq.q5':      'Do you travel outside Ha Noi for commissions?',
+    'faq.a5':      "Yes. Much of my work is done across Vietnam — the Northwest highlands, the central coast, the Mekong Delta. Travel costs for out-of-Ha-Noi commissions are included in the project proposal. I am comfortable working in remote or logistically complex locations.",
     'faq.q6':      'What is your cancellation policy?',
     'faq.a6':      "Cancel more than 72 hours before a confirmed shoot: full deposit refund. Within 48 hours: 50% refund. Same-day cancellations: non-refundable. For print and licensing orders, cancellation is accepted before production begins. If genuine unforeseen circumstances arise, contact me early — I am flexible in cases of real emergency.",
 
     // CTA
     'cta.eyebrow': 'Work with me',
-    'cta.h2':      'Your project<br/><i>starts with a message</i>',
-    'cta.sub':     "Whether you want to order a print, commission a documentary project, or licence an image, the first step is the same: send me a message. I'll respond within one working day.",
-    'cta.zalo':    'Message me on Zalo',
-    'cta.call':    'Call for a chat',
+    'cta.h2':      'Your project starts with a message.',
+    'cta.sub':     "Documentary commissions, print licensing, or editorial assignments — reach out and I'll respond within one business day.",
+    'cta.label':   'Zalo · Call',
+    'cta.zalo':    'Zalo',
+    'cta.call':    'Call',
 
     // Footer
-    'footer.brand.desc': 'Documentary and fine-art photography by Trần Đình Triệu. Based in Hà Nội. Working across Vietnam since 2010.',
+    'footer.brand.desc': 'Documentary and fine-art photography by Tran Dinh Trieu. Based in Ha Noi. Working across Vietnam since 2010.',
     'footer.col1':       'Portfolio',
     'footer.svc.01':     'Northwest Spring Blossoms',
     'footer.svc.02':     'Highland Peoples',
@@ -229,8 +234,8 @@ export const T = {
     'footer.exp.05':     'FAQ',
     'footer.col3':       'Contact',
     'footer.hours':      'Available: Mon – Sat<br/>9:00 to 18:00',
-    'footer.copy':       '© 2026 DT Studio · Trần Đình Triệu. All rights reserved.',
-    'footer.made':       'Photographer Trần Đình Triệu',
+    'footer.copy':       '© 2026 DT Studio · Tran Dinh Trieu. All rights reserved.',
+    'footer.made':       'Photographer Tran Dinh Trieu',
 
     // Album lightbox
     'alb.back':   'Back to gallery',
@@ -241,6 +246,10 @@ export const T = {
     // Float buttons
     'float.zalo': 'Zalo tư vấn',
     'float.call': 'Gọi ngay',
+
+    // Sidebar
+    'sidebar.sub':  'Nhiếp Ảnh Phóng Sự Tài Liệu',
+    'sidebar.bio':  'Trần Đình Triệu là nhiếp ảnh gia phóng sự tài liệu tại Hà Nội. Hơn 10 năm ghi lại vẻ đẹp thật của Việt Nam.',
 
     // Nav
     'nav.services':    'Portfolio',
@@ -347,8 +356,8 @@ export const T = {
     'price.desc':      'Từ một buổi chụp đơn giản đến dự án phóng sự dài ngày. Điều khoản rõ ràng, không phí phát sinh.',
     'price.unit':      'VND / buổi chụp',
     'price.01.tag':    'Gói 01',
-    'price.01.title':  'The Moment',
-    'price.01.sub':    'Buổi chụp cả ngày — một concept, một câu chuyện, được thực hiện trọn vẹn.',
+    'price.01.title':  'Khoảnh Khắc',
+    'price.01.sub':    'Buổi chụp cả ngày, một concept, một câu chuyện, được thực hiện trọn vẹn.',
     'price.01.li1':    '1 concept, 1 địa điểm, cả ngày',
     'price.01.li2':    '15 ảnh được chọn lọc và chỉnh sửa kỹ',
     'price.01.li3':    'File gốc độ phân giải cao',
@@ -365,7 +374,7 @@ export const T = {
     'price.02.li6':    'Lên kế hoạch và briefing trước khi triển khai',
     'price.02.li7':    'Giao file trong vòng 5 ngày làm việc',
     'price.03.tag':    'Gói 03 · Cao Cấp',
-    'price.03.title':  'Thương Mại · Quảng Cáo',
+    'price.03.title':  'Thương Mại',
     'price.03.sub':    'Sản xuất ảnh theo yêu cầu cho chiến dịch quảng cáo, thương hiệu và dự án tổ chức.',
     'price.03.li1':    'Sản xuất nhiều ngày, toàn quốc',
     'price.03.li2':    'Ekip đầy đủ, thiết bị chuyên nghiệp',
@@ -444,10 +453,11 @@ export const T = {
 
     // CTA
     'cta.eyebrow': 'Làm việc cùng tôi',
-    'cta.h2':      'Dự án của bạn<br/><i>bắt đầu bằng một tin nhắn</i>',
-    'cta.sub':     'Dù bạn muốn đặt in ảnh, đặt hàng dự án phóng sự, hay mua bản quyền tác phẩm, bước đầu tiên đều giống nhau: nhắn tin cho tôi. Tôi phản hồi trong một ngày làm việc.',
-    'cta.zalo':    'Nhắn Zalo cho tôi',
-    'cta.call':    'Gọi tư vấn ngay',
+    'cta.h2':      'Dự án của bạn bắt đầu bằng một tin nhắn.',
+    'cta.sub':     'Đặt hàng chụp phóng sự, mua bản quyền ảnh, hay hợp tác biên tập — liên hệ và tôi phản hồi trong một ngày làm việc.',
+    'cta.label':   'Zalo · Gọi điện',
+    'cta.zalo':    'Zalo',
+    'cta.call':    'Gọi ngay',
 
     // Footer
     'footer.brand.desc': 'Nhiếp ảnh phóng sự và nghệ thuật của Trần Đình Triệu. Sống và làm việc tại Hà Nội. Ghi lại Việt Nam từ năm 2010.',

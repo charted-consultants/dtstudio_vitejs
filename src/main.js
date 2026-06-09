@@ -159,7 +159,7 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.08 })
 document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
-let _lang = 'vi'
+let _lang = 'en'
 
 function setLang(lang) {
   _lang = lang
