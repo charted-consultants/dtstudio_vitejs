@@ -2,10 +2,32 @@ import './style.css'
 import { createIcons, Phone } from 'lucide'
 import { T } from './i18n.js'
 
+// ── Nav scroll: transparent over hero, solid when scrolled ──
+const _nav = document.getElementById('nav')
+function _updateNav() {
+  _nav.classList.toggle('solid', window.scrollY > window.innerHeight * 0.8)
+}
+window.addEventListener('scroll', _updateNav, { passive: true })
+
 // ── Mobile nav ──
 function toggleMob() {
-  document.getElementById('mob-nav').classList.toggle('open')
+  const open = document.getElementById('mob-nav').classList.toggle('open')
+  _nav.classList.toggle('solid', open || window.scrollY > window.innerHeight * 0.8)
 }
+
+// ── Award photo lightbox ──
+function openAwardPhoto(src, caption) {
+  document.getElementById('award-modal-img').src = src
+  document.getElementById('award-modal-caption').textContent = caption || ''
+  document.getElementById('award-photo-modal').classList.add('open')
+  document.body.style.overflow = 'hidden'
+}
+function closeAwardPhoto() {
+  document.getElementById('award-photo-modal').classList.remove('open')
+  document.getElementById('award-modal-img').src = ''
+  document.body.style.overflow = ''
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAwardPhoto() })
 
 // ── FAQ ──
 function toggleFaq(el) {
@@ -18,36 +40,36 @@ function toggleFaq(el) {
 // ── Albums ──
 const ALBUM_TITLES = {
   en: {
-    bm05: 'Couple Ao Dai · Classic',
-    bm13: 'Nine Tailed Fox',
-    bm15: 'Birthday · Cute Candy',
-    bm16: 'White Wedding · Blue Studio',
-    bm17: 'Couple White Ao Dai · Retro Bicycle',
-    bm19: 'Red Light Valentine',
-    bm23: 'Pink Hanfu · Pipa',
-    bm24: 'White Ao Dai · Lotus Lake'
+    dt01: 'Northwest · Spring Blossoms',
+    dt02: 'Highland Peoples',
+    dt03: 'Countryside · Rice Terraces',
+    dt04: 'Childhood Memories',
+    dt05: 'Fishermen from Above',
+    dt06: 'Fish Markets & Harbours',
+    dt07: 'Life at Sea',
+    dt08: 'Traditional Crafts'
   },
   vi: {
-    bm05: 'Couple Áo Dài · Cổ Điển',
-    bm13: 'Hồ Ly Chín Đuôi',
-    bm15: 'Tiệc Sinh Nhật · Cute Candy',
-    bm16: 'Váy Cưới Trắng · Studio Xanh',
-    bm17: 'Couple Áo Dài Trắng · Xe Đạp Retro',
-    bm19: 'Đèn Đỏ Valentine',
-    bm23: 'Hanfu Hồng · Đàn Tỳ Bà',
-    bm24: 'Áo Dài Trắng · Hồ Sen Tre'
+    dt01: 'Tây Bắc · Mùa Hoa',
+    dt02: 'Tộc Người Vùng Cao',
+    dt03: 'Đồng Quê · Ruộng Bậc Thang',
+    dt04: 'Ký Ức Tuổi Thơ',
+    dt05: 'Ngư Dân · Nhìn Từ Trên Cao',
+    dt06: 'Chợ Biển · Bến Cảng',
+    dt07: 'Nghề Biển',
+    dt08: 'Làng Nghề Truyền Thống'
   }
 }
 
 const ALBUMS = {
-  bm05: { path: '/albums/blue-moon/05%20-%20Couple%20Ao%20dai%20hong%20den%20-%20Co%20dien/', files: ['36.webp','37.webp','38.webp','39.webp'] },
-  bm13: { path: '/albums/blue-moon/13%20-%20Ho%20ly%209%20duoi/', files: ['106.webp','107.webp','108.webp','109.webp','110.webp'] },
-  bm15: { path: '/albums/blue-moon/15%20-%20Tiec%20sinh%20nhat%20-%20Cute%20Candy/', files: ['115.webp','116.webp','117.webp','118.webp','119.webp','120.webp','121.webp'] },
-  bm16: { path: '/albums/blue-moon/16%20-%20Vay%20cuoi%20trang%20-%20Studio%20xanh/', files: ['122.webp','123.webp','124.webp','125.webp','126.webp'] },
-  bm17: { path: '/albums/blue-moon/17%20-%20Couple%20Ao%20dai%20trang%20-%20Xe%20dap%20retro/', files: ['127.webp','128.webp','129.webp','130.webp','131.webp'] },
-  bm19: { path: '/albums/blue-moon/19%20-%20Den%20do%20Valentine/', files: ['139.webp','140.webp','141.webp','141A.webp'] },
-  bm23: { path: '/albums/blue-moon/23%20-%20Hanfu%20hong%20-%20Dan%20ty%20ba/', files: ['160.webp','161.webp','162.webp','163.webp'] },
-  bm24: { path: '/albums/blue-moon/24%20-%20Ao%20dai%20trang%20-%20Ho%20sen%20Tre/', files: ['164.webp','164A.webp','165.webp','165A.webp'] }
+  dt01: { path: '/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp','photo_05.webp','photo_06.webp'] },
+  dt02: { path: '/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp','photo_05.webp'] },
+  dt03: { path: '/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp'] },
+  dt04: { path: '/albums/dt/04%20-%20Ky%20Uc%20Tuoi%20Tho/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp'] },
+  dt05: { path: '/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp','photo_05.webp'] },
+  dt06: { path: '/albums/dt/06%20-%20Cho%20Bien%20-%20Ben%20Canh/', files: ['photo_01.webp','photo_02.webp','photo_03.webp'] },
+  dt07: { path: '/albums/dt/07%20-%20Nghe%20Bien/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp'] },
+  dt08: { path: '/albums/dt/08%20-%20Lang%20Nghe%20Truyen%20Thong/', files: ['photo_01.webp','photo_02.webp','photo_03.webp','photo_04.webp'] }
 }
 
 let curAlbum = null, curIdx = 0
@@ -137,7 +159,7 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.08 })
 document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
-let _lang = 'en'
+let _lang = 'vi'
 
 function setLang(lang) {
   _lang = lang
@@ -158,7 +180,7 @@ function setLang(lang) {
   }
 }
 
-setLang(localStorage.getItem('lang') || 'en')
+setLang(localStorage.getItem('lang') || 'vi')
 
 // Expose functions globally for HTML onclick attributes
 window.toggleMob = toggleMob
@@ -168,6 +190,8 @@ window.closeAlbum = closeAlbum
 window.closeSingle = closeSingle
 window.albNav = albNav
 window.setLang = setLang
+window.openAwardPhoto = openAwardPhoto
+window.closeAwardPhoto = closeAwardPhoto
 
 // Lucide icons
 createIcons({ icons: { Phone } })
