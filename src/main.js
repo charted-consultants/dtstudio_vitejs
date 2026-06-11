@@ -1,40 +1,9 @@
 import './style.css'
-import { createIcons, Phone } from 'lucide'
 import { T } from './i18n.js'
-
-// ── Nav scroll: transparent over hero, solid when scrolled ──
-const _nav = document.getElementById('nav')
-function _updateNav() {
-  _nav.classList.toggle('solid', window.scrollY > window.innerHeight * 0.8)
-}
-window.addEventListener('scroll', _updateNav, { passive: true })
 
 // ── Mobile nav ──
 function toggleMob() {
-  const open = document.getElementById('mob-nav').classList.toggle('open')
-  _nav.classList.toggle('solid', open || window.scrollY > window.innerHeight * 0.8)
-}
-
-// ── Award photo lightbox ──
-function openAwardPhoto(src, caption) {
-  document.getElementById('award-modal-img').src = src
-  document.getElementById('award-modal-caption').textContent = caption || ''
-  document.getElementById('award-photo-modal').classList.add('open')
-  document.body.style.overflow = 'hidden'
-}
-function closeAwardPhoto() {
-  document.getElementById('award-photo-modal').classList.remove('open')
-  document.getElementById('award-modal-img').src = ''
-  document.body.style.overflow = ''
-}
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAwardPhoto() })
-
-// ── FAQ ──
-function toggleFaq(el) {
-  const item = el.closest('.faq-item')
-  const isOpen = item.classList.contains('open')
-  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'))
-  if (!isOpen) item.classList.add('open')
+  document.getElementById('mob-nav').classList.toggle('open')
 }
 
 // ── Albums ──
@@ -131,8 +100,9 @@ function closeAlbum() {
 
 // Touch swipe for lightbox
 let _tx = 0
-document.querySelector('.alb-single-body').addEventListener('touchstart', e => { _tx = e.touches[0].clientX }, { passive: true })
-document.querySelector('.alb-single-body').addEventListener('touchend', e => {
+const _albBody = document.querySelector('.alb-single-body')
+_albBody.addEventListener('touchstart', e => { _tx = e.touches[0].clientX }, { passive: true })
+_albBody.addEventListener('touchend', e => {
   const d = _tx - e.changedTouches[0].clientX
   if (Math.abs(d) > 44 && document.getElementById('alb-single').classList.contains('open')) albNav(d > 0 ? 1 : -1)
 }, { passive: true })
@@ -150,15 +120,48 @@ document.addEventListener('keydown', e => {
   }
 })
 
-// ── Scroll reveal ──
+// ── Award photo lightbox ──
+function openAwardPhoto(src, caption) {
+  document.getElementById('award-modal-img').src = src
+  document.getElementById('award-modal-caption').textContent = caption || ''
+  document.getElementById('award-photo-modal').classList.add('open')
+  document.body.style.overflow = 'hidden'
+}
+function closeAwardPhoto() {
+  document.getElementById('award-photo-modal').classList.remove('open')
+  document.getElementById('award-modal-img').src = ''
+  document.body.style.overflow = ''
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.getElementById('award-photo-modal').classList.contains('open')) closeAwardPhoto()
+})
+
+// ── Contact form → opens mail client with a prefilled message ──
+function sendContact(e) {
+  e.preventDefault()
+  const f = e.target
+  const name = (f.name.value || '').trim()
+  const email = (f.email.value || '').trim()
+  const phone = (f.phone.value || '').trim()
+  const type = f.type.value
+  const message = (f.message.value || '').trim()
+  const subject = `[DT Studio] ${type} — ${name}`
+  const body =
+    `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${type}\n\n${message}`
+  window.location.href =
+    `mailto:info@dtstudio.chartedconsultants.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  return false
+}
+
+// ── Scroll reveal (once, subtle) ──
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add('in')
-    else e.target.classList.remove('in')
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) }
   })
-}, { threshold: 0.08 })
+}, { threshold: 0.12 })
 document.querySelectorAll('.reveal').forEach(el => io.observe(el))
 
+// ── Language ──
 let _lang = 'en'
 
 function setLang(lang) {
@@ -182,16 +185,13 @@ function setLang(lang) {
 
 setLang(localStorage.getItem('lang') || 'vi')
 
-// Expose functions globally for HTML onclick attributes
+// Expose for inline handlers
 window.toggleMob = toggleMob
-window.toggleFaq = toggleFaq
 window.openAlbum = openAlbum
 window.closeAlbum = closeAlbum
 window.closeSingle = closeSingle
 window.albNav = albNav
 window.setLang = setLang
+window.sendContact = sendContact
 window.openAwardPhoto = openAwardPhoto
 window.closeAwardPhoto = closeAwardPhoto
-
-// Lucide icons
-createIcons({ icons: { Phone } })

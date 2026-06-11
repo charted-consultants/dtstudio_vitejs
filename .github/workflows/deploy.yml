@@ -1,14 +1,12 @@
-name: Build Check
+name: Deploy DT Studio
 
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,3 +19,41 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+
+      # ── Production · dinhtrieustudio.com (178) ──
+      - name: Clear old assets on prod
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_PROD_HOST }}
+          username: ${{ secrets.VPS_PROD_USER }}
+          key: ${{ secrets.VPS_PROD_SSH_KEY }}
+          script: rm -rf /var/www/dtstudio/assets
+
+      - name: Deploy to prod
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_PROD_HOST }}
+          username: ${{ secrets.VPS_PROD_USER }}
+          key: ${{ secrets.VPS_PROD_SSH_KEY }}
+          source: "dist/*"
+          target: "/var/www/dtstudio"
+          strip_components: 1
+
+      # ── Staging · staging.dinhtrieustudio.com (143) ──
+      - name: Clear old assets on staging
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_STAGING_HOST }}
+          username: ${{ secrets.VPS_STAGING_USER }}
+          key: ${{ secrets.VPS_STAGING_SSH_KEY }}
+          script: rm -rf /var/www/dtstudio/assets
+
+      - name: Deploy to staging
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_STAGING_HOST }}
+          username: ${{ secrets.VPS_STAGING_USER }}
+          key: ${{ secrets.VPS_STAGING_SSH_KEY }}
+          source: "dist/*"
+          target: "/var/www/dtstudio"
+          strip_components: 1

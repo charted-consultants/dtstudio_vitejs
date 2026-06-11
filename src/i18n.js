@@ -6,9 +6,8 @@ export const T = {
     'float.zalo': 'Zalo chat',
     'float.call': 'Call now',
 
-    // Sidebar
-    'sidebar.sub':  'Documentary Photography',
-    'sidebar.bio':  'Tran Dinh Trieu is a documentary photographer based in Ha Noi. Over a decade capturing the real beauty of Viet Nam.',
+    // Brand
+    'brand.tag':  'Documentary Photography',
 
     // Nav
     'nav.services':    'Portfolio',
@@ -23,8 +22,8 @@ export const T = {
 
     // Hero
     'hero.eyebrow': 'Photographer Tran Dinh Trieu · Ha Noi',
-    'hero.h1':      'The real moment,<br/><i>stays forever</i>',
-    'hero.sub':     "I don't set up scenes. I wait for life to reveal itself, then I press the shutter. From the misty highlands of the Northwest to the fishing villages along the coast, every frame I take is a true story of Vietnam.",
+    'hero.h1':      'Every frame,<br/><i>a slice of time</i>',
+    'hero.sub':     "I do not stage. I wait for life to reveal itself, then I press the shutter. From the old quarter of Ha Noi to the mountain villages of the Northwest, every frame I keep is a quiet witness to a Vietnam in transition, yet still rich with tradition.",
     'hero.btn1':    'View collections',
     'hero.btn2':    'Contact me',
 
@@ -50,10 +49,10 @@ export const T = {
 
     // About
     'about.eyebrow': 'About the photographer',
-    'about.h2':      'A Hanoian, who photographs Vietnam<br/><i>with quiet devotion</i>',
-    'about.p1':      "My name is Trieu. I am a documentary and fine-art photographer based in Ha Noi. For over a decade I have travelled across Vietnam, from the high mountain villages of Ha Giang and the Northwest to the fishing communities of the central and southern coasts. I am not interested in staged beauty. I wait. I watch. I look for the unguarded moment, the way morning light catches the smoke above a straw roof, the way a child's laughter rings out above the sound of a river.",
+    'about.h2':      'A Hanoian, keeping the memory of Vietnam<br/><i>one frame at a time</i>',
+    'about.p1':      "My name is Trieu, a documentary and fine-art photographer born and raised in the heart of Ha Noi. For more than a decade the camera has been less a tool than a close companion, travelling with me the length of the country: from the mist-wrapped villages of Ha Giang and the Northwest to the fishing communities of the central and southern coast. I do not look for arranged beauty. I wait, I watch, I let the simple, living moment reveal itself: the way morning light catches the smoke above a roof, the way a child's laughter rises over the sound of a river.",
     'about.quote':   '"A photograph is not taken, it is given, by a moment that will never come again."',
-    'about.p2':      "Since 2010, I have documented the lives of ethnic minority peoples, coastal fishing communities, rural children at play, and the rhythms of traditional crafts that are slowly disappearing. My work has been exhibited in national competitions, recognised by the Vietnam Association of Photographic Artists, and featured in Vietnam Heritage magazine. Each photograph in this portfolio is a record: not of what I wanted to see, but of what was actually there.",
+    'about.p2':      "Since 2010 I have recorded the lives of highland peoples, coastal fishing communities, and the traditional crafts that are quietly fading away. Some of what I photograph today will be gone tomorrow. To me each photograph is a slice of time, a quiet witness, a bridge between the past and the present. My work has been exhibited in national competitions, awarded a Silver Medal by the Vietnam Association of Photographic Artists, and honoured by Vietnam Heritage magazine.",
     'about.sig':     'Tran Dinh Trieu, documentary photographer · Ha Noi',
     'about.badge':   'years of documentary work',
 
@@ -70,7 +69,7 @@ export const T = {
     // Collections
     'col.eyebrow': 'Collections',
     'col.h2':      'Eight series,<br/><i>eight faces of Vietnam</i>',
-    'col.desc':    'Each series is an independent journey into a different aspect of Vietnamese life. Click any collection to view the full work.',
+    'col.desc':    'Each series is a slice of time, a quiet journey into another face of Vietnamese life. Click any collection to view the full work.',
     'col.btn':     'View collection',
     'col01.title':   'Northwest · Spring Blossoms',
     'col01.tagline': '"When the mountains bloom, Vietnam is most beautiful."',
@@ -237,6 +236,30 @@ export const T = {
     'footer.copy':       '© 2026 DT Studio · Tran Dinh Trieu. All rights reserved.',
     'footer.made':       'Photographer Tran Dinh Trieu',
 
+    // Fine Art Prints
+    'nav.prints':     'Fine Art Prints',
+    'prints.eyebrow': 'Fine Art Prints',
+    'prints.h2':      'Limited-edition prints,<br/><i>signed and numbered</i>',
+    'prints.desc':    'Bring a piece of Vietnam into your home or workspace. Every print is produced in a limited edition on archival fine-art paper, signed and numbered by hand, with a certificate of authenticity.',
+    'prints.cta':     'Enquire about prints',
+
+    // Contact
+    'contact.eyebrow':     'Get in touch',
+    'contact.h2':          'Your project starts<br/><i>with a message</i>',
+    'contact.sub':         'For documentary commissions, print orders or image licensing, send a note below or reach me directly. I reply within one business day.',
+    'contact.call':        'Call',
+    'contact.based':       'Based in',
+    'contact.name':        'Name',
+    'contact.email':       'Email',
+    'contact.phone':       'Phone',
+    'contact.type':        "I'm interested in",
+    'contact.type.shoot':  'Documentary commission',
+    'contact.type.print':  'Fine art prints',
+    'contact.type.license':'Image licensing',
+    'contact.type.other':  'Something else',
+    'contact.msg':         'Message',
+    'contact.send':        'Send message',
+
     // Album lightbox
     'alb.back':   'Back to gallery',
     'alb.photos': 'photos',
@@ -247,9 +270,8 @@ export const T = {
     'float.zalo': 'Zalo tư vấn',
     'float.call': 'Gọi ngay',
 
-    // Sidebar
-    'sidebar.sub':  'Nhiếp Ảnh Phóng Sự Tài Liệu',
-    'sidebar.bio':  'Trần Đình Triệu là nhiếp ảnh gia phóng sự tài liệu tại Hà Nội. Hơn 10 năm ghi lại vẻ đẹp thật của Việt Nam.',
+    // Brand
+    'brand.tag':  'Nhiếp Ảnh Phóng Sự Tài Liệu',
 
     // Nav
     'nav.services':    'Portfolio',
@@ -264,8 +286,8 @@ export const T = {
 
     // Hero
     'hero.eyebrow': 'Nhiếp ảnh gia Trần Đình Triệu · Hà Nội',
-    'hero.h1':      'Khoảnh khắc thật,<br/><i>đọng lại mãi</i>',
-    'hero.sub':     'Tôi không dàn dựng. Tôi đợi cuộc sống tự bộc lộ rồi mới bấm máy. Từ vùng núi Tây Bắc mờ sương đến những làng chài ven biển, mỗi khung hình tôi chụp là một câu chuyện thật của Việt Nam.',
+    'hero.h1':      'Mỗi khung hình,<br/><i>một lát cắt thời gian</i>',
+    'hero.sub':     'Tôi không dàn dựng. Tôi đợi đời sống tự hiện ra rồi mới bấm máy. Từ phố cổ Hà Nội đến những bản làng mờ sương Tây Bắc, mỗi khung hình tôi giữ lại là một chứng nhân lặng lẽ của một Việt Nam đang chuyển mình mà vẫn đậm nét truyền thống.',
     'hero.btn1':    'Xem bộ sưu tập',
     'hero.btn2':    'Liên hệ với tôi',
 
@@ -291,10 +313,10 @@ export const T = {
 
     // About
     'about.eyebrow': 'Về nhiếp ảnh gia',
-    'about.h2':      'Người Hà Nội, chụp Việt Nam<br/><i>bằng sự kiên nhẫn và lòng trân trọng</i>',
-    'about.p1':      'Tên tôi là Triệu. Tôi là nhiếp ảnh gia phóng sự và ảnh nghệ thuật, sống và làm việc tại Hà Nội. Hơn một thập kỷ qua, tôi đã đi khắp Việt Nam, từ những bản làng trên núi cao ở Hà Giang và Tây Bắc đến những cộng đồng ngư dân ven biển miền Trung và miền Nam. Tôi không quan tâm đến vẻ đẹp được sắp đặt. Tôi đợi. Tôi quan sát. Tôi tìm kiếm khoảnh khắc chưa kịp phòng bị: cái cách ánh sáng ban mai bắt vào làn khói trên mái nhà tranh, tiếng cười của đứa trẻ vang lên trên tiếng nước chảy.',
+    'about.h2':      'Người Hà Nội, lưu giữ ký ức Việt Nam<br/><i>qua từng khuôn hình</i>',
+    'about.p1':      'Tôi tên là Triệu, nhiếp ảnh gia phóng sự và ảnh nghệ thuật, sinh ra và lớn lên giữa lòng Hà Nội. Hơn một thập kỷ qua, chiếc máy ảnh với tôi không chỉ là công cụ, mà là người bạn tri kỷ, cùng tôi đi dọc dải đất hình chữ S: từ những bản làng mờ sương ở Hà Giang, Tây Bắc đến các làng chài ven biển miền Trung, miền Nam. Tôi không tìm vẻ đẹp được sắp đặt. Tôi đợi, tôi quan sát, tôi lặng lẽ chờ khoảnh khắc giản dị mà tràn đầy sức sống tự hiện ra: cái cách ánh mai bắt vào làn khói trên mái nhà, tiếng cười trẻ thơ vang trên tiếng nước chảy.',
     'about.quote':   '"Bức ảnh không phải được chụp, mà được trao, bởi một khoảnh khắc sẽ không bao giờ trở lại."',
-    'about.p2':      'Từ năm 2010, tôi đã ghi lại cuộc sống của các dân tộc thiểu số vùng cao, cộng đồng ngư dân ven biển, những đứa trẻ nông thôn vui đùa, và nhịp sống của các làng nghề truyền thống đang dần mai một. Tác phẩm của tôi đã được triển lãm tại nhiều cuộc thi nhiếp ảnh cấp quốc gia, được Hội Nghệ Sĩ Nhiếp Ảnh Việt Nam trao Huy Chương Bạc, và được Tạp chí Vietnam Heritage vinh danh. Mỗi bức ảnh trong portfolio này là một chứng nhân: không phải của điều tôi muốn thấy, mà của điều thực sự đã ở đó.',
+    'about.p2':      'Từ năm 2010, tôi đã ghi lại đời sống của các dân tộc vùng cao, cộng đồng ngư dân ven biển, và những làng nghề đang lặng lẽ mai một. Có những điều tôi chụp hôm nay, ngày mai đã không còn nữa. Với tôi, mỗi bức ảnh là một lát cắt thời gian, một chứng nhân lặng lẽ, một cây cầu nối quá khứ với hiện tại. Tác phẩm của tôi từng được triển lãm tại nhiều cuộc thi cấp quốc gia, được Hội Nghệ Sĩ Nhiếp Ảnh Việt Nam trao Huy Chương Bạc và được Tạp chí Vietnam Heritage vinh danh.',
     'about.sig':     'Trần Đình Triệu, nhiếp ảnh gia phóng sự · Hà Nội',
     'about.badge':   'năm ghi lại Việt Nam',
 
@@ -311,7 +333,7 @@ export const T = {
     // Collections
     'col.eyebrow': 'Bộ sưu tập',
     'col.h2':      'Tám bộ ảnh,<br/><i>tám khuôn mặt Việt Nam</i>',
-    'col.desc':    'Mỗi bộ ảnh là một hành trình độc lập vào một khía cạnh khác của cuộc sống Việt Nam. Nhấn vào bất kỳ bộ nào để xem toàn bộ tác phẩm.',
+    'col.desc':    'Mỗi bộ ảnh là một lát cắt thời gian, một hành trình lặng lẽ vào một khuôn mặt khác của đời sống Việt Nam. Nhấn vào bất kỳ bộ nào để xem trọn tác phẩm.',
     'col.btn':     'Xem bộ sưu tập',
     'col01.title':   'Tây Bắc · Mùa Hoa',
     'col01.tagline': '"Khi núi rừng nở hoa, Việt Nam đẹp nhất."',
@@ -477,6 +499,30 @@ export const T = {
     'footer.hours':      'Làm việc: Thứ Hai – Thứ Bảy<br/>9:00 đến 18:00',
     'footer.copy':       '© 2026 DT Studio · Trần Đình Triệu. Bảo lưu mọi quyền.',
     'footer.made':       'Nhiếp ảnh gia Trần Đình Triệu',
+
+    // Fine Art Prints
+    'nav.prints':     'Ảnh in nghệ thuật',
+    'prints.eyebrow': 'Ảnh in nghệ thuật',
+    'prints.h2':      'Ảnh in giới hạn,<br/><i>có chữ ký và số thứ tự</i>',
+    'prints.desc':    'Mang một phần Việt Nam về nhà hoặc nơi làm việc của bạn. Mỗi bản in được thực hiện theo số lượng giới hạn trên giấy fine art lưu trữ, ký tay và đánh số, kèm chứng nhận xác thực.',
+    'prints.cta':     'Hỏi về ảnh in',
+
+    // Contact
+    'contact.eyebrow':     'Liên hệ',
+    'contact.h2':          'Dự án của bạn bắt đầu<br/><i>bằng một tin nhắn</i>',
+    'contact.sub':         'Đặt hàng chụp phóng sự, mua ảnh in hay bản quyền hình ảnh, để lại lời nhắn bên dưới hoặc liên hệ trực tiếp với tôi. Tôi phản hồi trong một ngày làm việc.',
+    'contact.call':        'Gọi điện',
+    'contact.based':       'Có mặt tại',
+    'contact.name':        'Họ tên',
+    'contact.email':       'Email',
+    'contact.phone':       'Số điện thoại',
+    'contact.type':        'Tôi quan tâm đến',
+    'contact.type.shoot':  'Đặt hàng chụp phóng sự',
+    'contact.type.print':  'Ảnh in nghệ thuật',
+    'contact.type.license':'Bản quyền hình ảnh',
+    'contact.type.other':  'Việc khác',
+    'contact.msg':         'Lời nhắn',
+    'contact.send':        'Gửi tin nhắn',
 
     // Album lightbox
     'alb.back':   'Quay lại thư viện',

@@ -15,103 +15,162 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a1a1a'/><text x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='13' font-weight='400' letter-spacing='1' fill='%23c8a96e'>DT</text></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Open+Sans:wght@300;400;500;600&family=Reenie+Beanie&display=swap" rel="stylesheet"/>
 </head>
-<body>
+<body id="top">
 
-<!-- SIDEBAR (desktop only) -->
-<aside class="sidebar" id="sidebar">
-  <a class="sb-logo" href="#">DT STUDIO<span class="dot">.</span></a>
-  <nav class="sb-nav">
-    <a href="#collections" data-i18n="nav.collections">Collections</a>
-    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
-    <a href="#feedback" data-i18n="nav.stories">Reviews</a>
-    <a href="#about" data-i18n="nav.about">About</a>
-    <a href="#faq" data-i18n="nav.faq">FAQ</a>
-  </nav>
-  <div class="sb-bottom">
-    <a class="sb-tel" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer">0942 995 875</a>
-    <div class="lang-toggle">
-      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
-      <span class="lang-sep-bar">|</span>
-      <button class="lang-btn" data-lang="vi" onclick="setLang('vi')">VI</button>
-    </div>
-    <a class="sb-cta" href="#cta-banner" data-i18n="nav.cta">Book Now</a>
-  </div>
-</aside>
-
-<!-- NAV (mobile only) -->
-<nav id="nav">
-  <div class="nav-inner">
-    <a class="nav-logo" href="#">DT STUDIO<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="#collections" data-i18n="nav.collections">Collections</a>
-      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
-      <a href="#feedback" data-i18n="nav.stories">Reviews</a>
-      <a href="#about" data-i18n="nav.about">About</a>
-      <a href="#faq" data-i18n="nav.faq">FAQ</a>
-    </div>
-    <div class="nav-right">
-      <a class="nav-tel" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer">0942 995 875</a>
+<!-- HEADER -->
+<header id="nav">
+  <div class="nav-top">
+    <button class="nav-burger" onclick="toggleMob()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a class="nav-logo" href="#top">
+      <span class="nav-logo-name">DT&nbsp;STUDIO</span>
+      <span class="nav-logo-tag" data-i18n="brand.tag">Documentary Photography</span>
+    </a>
+    <div class="nav-icons">
+      <a class="nav-soc" href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="nav-soc" href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M13.5 21v-8h2.4l.4-3h-2.8V8.1c0-.85.27-1.43 1.5-1.43H16.8V4.05A20 20 0 0 0 14.6 3.9c-2.2 0-3.7 1.34-3.7 3.8V10H8.4v3h2.5v8z"/></svg>
+      </a>
       <div class="lang-toggle">
         <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
         <span class="lang-sep-bar">|</span>
         <button class="lang-btn" data-lang="vi" onclick="setLang('vi')">VI</button>
       </div>
-      <a class="nav-cta" href="#cta-banner" data-i18n="nav.cta">Book Now</a>
-    </div>
-    <div class="nav-burger" onclick="toggleMob()">
-      <span></span><span></span><span></span>
     </div>
   </div>
-</nav>
+  <nav class="nav-menu">
+    <a href="#collections" data-i18n="nav.collections">Collections</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#awards" data-i18n="nav.awards">Awards</a>
+    <a href="#prints" data-i18n="nav.prints">Fine Art Prints</a>
+    <a href="#testimonial" data-i18n="nav.stories">Reviews</a>
+    <a href="#contact" data-i18n="nav.cta">Contact</a>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
 <div class="mob-nav" id="mob-nav">
   <a href="#collections" onclick="toggleMob()" data-i18n="nav.collections">Collections</a>
-  <a href="#pricing" onclick="toggleMob()" data-i18n="nav.pricing">Pricing</a>
-  <a href="#feedback" onclick="toggleMob()" data-i18n="nav.stories">Reviews</a>
   <a href="#about" onclick="toggleMob()" data-i18n="nav.about">About</a>
-  <a class="mob-cta" href="#cta-banner" onclick="toggleMob()" data-i18n="mob.cta">Book Now</a>
-  <div class="lang-toggle">
-    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
-    <span class="lang-sep-bar">|</span>
-    <button class="lang-btn" data-lang="vi" onclick="setLang('vi')">VI</button>
-  </div>
+  <a href="#awards" onclick="toggleMob()" data-i18n="nav.awards">Awards</a>
+  <a href="#prints" onclick="toggleMob()" data-i18n="nav.prints">Fine Art Prints</a>
+  <a href="#testimonial" onclick="toggleMob()" data-i18n="nav.stories">Reviews</a>
+  <a href="#contact" onclick="toggleMob()" data-i18n="nav.cta">Contact</a>
 </div>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-slides">
-    <div class="hero-slide" style="background-image:url('/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_01.webp')"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_02.webp')"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/photo_02.webp')"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/photo_04.webp');background-position:center 40%"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_01.webp')"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_02.webp')"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/07%20-%20Nghe%20Bien/photo_01.webp')"></div>
-    <div class="hero-slide" style="background-image:url('/albums/dt/07%20-%20Nghe%20Bien/photo_03.webp')"></div>
+  <div class="hero-img" style="background-image:url('/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/photo_02.webp')"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Photographer Trần Đình Triệu · Hà Nội</span>
+    <h1 class="hero-h1 reveal" data-i18n-html="hero.h1">The real moment,<br/><i>stays forever</i></h1>
+    <p class="hero-sub reveal" data-i18n="hero.sub">I don't set up scenes. I wait for life to reveal itself, then I press the shutter.</p>
+    <div class="hero-btns reveal">
+      <a class="btn btn-solid" href="#collections" data-i18n="hero.btn1">View collections</a>
+      <a class="btn btn-line" href="#contact" data-i18n="hero.btn2">Contact me</a>
+    </div>
   </div>
-  <div class="hero-overlay"></div>
-  <div class="hero-credit" data-i18n="hero.eyebrow">Photographer Trần Đình Triệu · Hà Nội</div>
-  <div class="hero-scroll">Scroll</div>
 </section>
 
+<!-- COLLECTIONS GRID -->
+<section id="collections">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-i18n="col.eyebrow">Collections</span>
+      <h2 class="h2" data-i18n-html="col.h2">Eight series,<br/><i>eight faces of Vietnam</i></h2>
+      <p class="lead" data-i18n="col.desc">Each series is an independent journey into a different aspect of Vietnamese life.</p>
+    </div>
+    <div class="tile-grid">
+      <article class="tile reveal" onclick="openAlbum('dt01')">
+        <div class="tile-img"><img src="/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_01.webp" alt="Tây Bắc · Mùa Hoa" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col01.title">Northwest · Spring Blossoms</h3>
+          <p class="tile-desc" data-i18n="col01.tagline">"When the mountains bloom, Vietnam is most beautiful."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt02')">
+        <div class="tile-img"><img src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_02.webp" alt="Tộc Người Vùng Cao" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col02.title">Highland Peoples</h3>
+          <p class="tile-desc" data-i18n="col02.tagline">"The mountain peoples carry their world in their colours."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt03')">
+        <div class="tile-img"><img src="/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/photo_01.webp" alt="Đồng Quê · Ruộng Bậc Thang" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col03.title">Countryside · Rice Terraces</h3>
+          <p class="tile-desc" data-i18n="col03.tagline">"The most beautiful landscapes are made by human hands."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt04')">
+        <div class="tile-img"><img src="/albums/dt/04%20-%20Ky%20Uc%20Tuoi%20Tho/photo_04.webp" alt="Ký Ức Tuổi Thơ" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col04.title">Childhood Memories</h3>
+          <p class="tile-desc" data-i18n="col04.tagline">"Children are the most honest subjects a photographer can have."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt05')">
+        <div class="tile-img"><img src="/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_05.webp" alt="Ngư Dân · Nhìn Từ Trên Cao" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col05.title">Fishermen from Above</h3>
+          <p class="tile-desc" data-i18n="col05.tagline">"From above, a fishing net becomes a painting."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt06')">
+        <div class="tile-img"><img src="/albums/dt/06%20-%20Cho%20Bien%20-%20Ben%20Canh/photo_03.webp" alt="Chợ Biển · Bến Cảng" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col06.title">Fish Markets &amp; Harbours</h3>
+          <p class="tile-desc" data-i18n="col06.tagline">"The fish market at dawn is the most alive place in Vietnam."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt07')">
+        <div class="tile-img"><img src="/albums/dt/07%20-%20Nghe%20Bien/photo_02.webp" alt="Nghề Biển" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col07.title">Life at Sea</h3>
+          <p class="tile-desc" data-i18n="col07.tagline">"The sea gives, and the sea takes. The fisherman knows both."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+      <article class="tile reveal" onclick="openAlbum('dt08')">
+        <div class="tile-img"><img src="/albums/dt/08%20-%20Lang%20Nghe%20Truyen%20Thong/photo_03.webp" alt="Làng Nghề Truyền Thống" loading="lazy"/></div>
+        <div class="tile-body">
+          <h3 class="tile-title" data-i18n="col08.title">Traditional Crafts</h3>
+          <p class="tile-desc" data-i18n="col08.tagline">"In every skilled pair of hands, there is a story."</p>
+          <span class="tile-cta" data-i18n="col.btn">View collection</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-<!-- SERVICES -->
-
-<!-- ABOUT -->
+<!-- ABOUT (featured split) -->
 <section id="about">
   <div class="container">
-    <div class="about-grid about-text-only">
-      <div class="about-text reveal">
-        <span class="eyebrow" data-i18n="about.eyebrow">About AURA Studio</span>
-        <h2 class="h2" data-i18n-html="about.h2">A studio that tells stories<br/><i>through light</i></h2>
-        <div class="sep"></div>
-        <p class="body-text" data-i18n="about.p1">AURA was born from a simple belief: Vietnamese women deserve photos that celebrate their true beauty. No rigid posing, no heavy makeup, no retouching so heavy you become a stranger to yourself.</p>
-        <blockquote class="quote" data-i18n="about.quote">"I don't photograph beauty. I photograph the story of the person standing in front of my lens."</blockquote>
-        <p class="body-text" data-i18n="about.p2">Since opening, AURA has walked alongside hundreds of clients in Nam Dinh. Every shoot is its own journey, every set of photos a chapter of memory no one else can have.</p>
-        <div class="about-sig">
-          <div class="about-sig-line"></div>
-          <span class="about-sig-text" data-i18n="about.sig">Duong Thi Hang, founding photographer of Blue Moon Studio</span>
+    <div class="feature">
+      <div class="feature-img reveal">
+        <img src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_01.webp" alt="Trần Đình Triệu — documentary photography" loading="lazy"/>
+        <div class="feature-badge"><span class="feature-num">15+</span><span class="feature-num-label" data-i18n="about.badge">years of documentary work</span></div>
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">About the photographer</span>
+        <h2 class="h2" data-i18n-html="about.h2">A Hanoian, who photographs Vietnam<br/><i>with quiet devotion</i></h2>
+        <div class="rule"></div>
+        <p class="body-text" data-i18n="about.p1">My name is Trieu. I am a documentary and fine-art photographer based in Ha Noi.</p>
+        <blockquote class="quote" data-i18n="about.quote">"A photograph is not taken, it is given, by a moment that will never come again."</blockquote>
+        <p class="body-text" data-i18n="about.p2">Since 2010, I have documented the lives of ethnic minority peoples, coastal fishing communities, and disappearing traditional crafts.</p>
+        <div class="sig">
+          <div class="sig-line"></div>
+          <span class="sig-text" data-i18n="about.sig">Tran Dinh Trieu, documentary photographer · Ha Noi</span>
         </div>
       </div>
     </div>
@@ -121,417 +180,112 @@
 <!-- AWARDS -->
 <section id="awards">
   <div class="container">
-    <div class="awards-head reveal">
+    <div class="sec-head reveal">
       <span class="eyebrow" data-i18n="awards.eyebrow">Awards &amp; Recognition</span>
-      <h2 class="h2" data-i18n-html="awards.h2">Những tác phẩm <i>được vinh danh</i></h2>
+      <h2 class="h2" data-i18n-html="awards.h2">Work that has been <i>recognised</i></h2>
     </div>
-  </div>
-
-  <div class="award-split reveal">
-    <div class="award-cert-wrap">
-      <img class="award-cert-img" src="/awards/award_01.webp" alt="Bằng chứng nhận Vietnam Heritage Photo Awards 2018" loading="lazy"/>
-    </div>
-    <div class="award-split-body">
-      <div class="award-badge" data-i18n="awards.02.badge">Bằng Chứng Nhận</div>
-      <div class="award-year">2018</div>
-      <div class="award-title" data-i18n="awards.02.title">Chùa Trấn Quốc</div>
-      <div class="award-org" data-i18n="awards.02.org">Vietnam Heritage Photo Awards 2018 · "Những dòng sông Việt Nam" · Hội Di Sản Văn Hoá Việt Nam &amp; Tạp chí Vietnam Heritage.</div>
-      <button class="award-view-btn award-view-soon" disabled data-i18n="awards.btn.soon">Ảnh tác phẩm sẽ cập nhật</button>
-    </div>
-  </div>
-
-  <div class="award-split reverse reveal">
-    <div class="award-cert-wrap">
-      <img class="award-cert-img" src="/awards/award_02.webp" alt="Bằng chứng nhận VAPA Huy Chương Bạc 2017" loading="lazy"/>
-    </div>
-    <div class="award-split-body">
-      <div class="award-badge" data-i18n="awards.01.badge">Huy Chương Bạc</div>
-      <div class="award-year">2017</div>
-      <div class="award-title" data-i18n="awards.01.title">Vũ Khúc Trên Sông</div>
-      <div class="award-org" data-i18n="awards.01.org">Hội Nghệ Sĩ Nhiếp Ảnh Việt Nam (VAPA) · Liên hoan Ảnh Nghệ Thuật Khu vực Miền Núi Phía Bắc lần thứ 22 · 2017</div>
-      <button class="award-view-btn" onclick="openAwardPhoto('/awards/vu-khuc-tren-song.webp', 'Vũ Khúc Trên Sông')" data-i18n="awards.btn.view">Xem tác phẩm đạt giải</button>
+    <div class="awards-list">
+      <article class="award reveal">
+        <div class="award-cert"><img src="/awards/award_02.webp" alt="VAPA Silver Medal 2017 certificate" loading="lazy"/></div>
+        <div class="award-body">
+          <span class="award-medal" data-i18n="awards.01.badge">Silver Medal</span>
+          <span class="award-year">2017</span>
+          <h3 class="award-title" data-i18n="awards.01.title">Vu Khuc Tren Song</h3>
+          <p class="award-org" data-i18n="awards.01.org">Vietnam Association of Photographic Artists (VAPA) · Northern Mountain Region Fine Art Photography Festival, 22nd Edition · 2017</p>
+          <button class="award-view" onclick="openAwardPhoto('/awards/vu-khuc-tren-song.webp','Vũ Khúc Trên Sông')" data-i18n="awards.btn.view">View award photo</button>
+        </div>
+      </article>
+      <article class="award reverse reveal">
+        <div class="award-cert"><img src="/awards/award_01.webp" alt="Vietnam Heritage Photo Awards 2018 certificate" loading="lazy"/></div>
+        <div class="award-body">
+          <span class="award-medal" data-i18n="awards.02.badge">Certificate of Recognition</span>
+          <span class="award-year">2018</span>
+          <h3 class="award-title" data-i18n="awards.02.title">Chua Tran Quoc</h3>
+          <p class="award-org" data-i18n="awards.02.org">Vietnam Heritage Photo Awards 2018 · "Rivers of Vietnam" · Vietnam Cultural Heritage Association &amp; Vietnam Heritage Magazine.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- USP -->
-<section id="usp">
-  <div class="usp-inner">
-    <div class="usp-head reveal">
-      <span class="eyebrow" data-i18n="usp.eyebrow">What only AURA offers</span>
-      <h2 class="h2" style="color:#fff" data-i18n-html="usp.h2">Three things<br/><i>only at AURA</i></h2>
-    </div>
-    <div class="usp-grid">
-      <div class="usp-item reveal">
-        <div class="usp-num">01</div>
-        <h3 class="usp-title" data-i18n-html="usp.01.title">Pre-session<br/><i>consultation</i></h3>
-        <p class="usp-desc" data-i18n="usp.01.desc">Before your shoot, AURA consults on your concept and helps you choose outfits from the studio's wardrobe via Zalo. On shoot day, you walk in and start enjoying immediately. Nothing left to worry about.</p>
-      </div>
-      <div class="usp-item reveal">
-        <div class="usp-num">02</div>
-        <h3 class="usp-title" data-i18n-html="usp.02.title">A team with you<br/><i>throughout</i></h3>
-        <p class="usp-desc" data-i18n="usp.02.desc">The photographer and posing assistant stay with you from start to finish, no rush, no pressure. The session continues until you have all the frames you love.</p>
-      </div>
-      <div class="usp-item reveal">
-        <div class="usp-num">03</div>
-        <h3 class="usp-title" data-i18n-html="usp.03.title">Original files delivered<br/><i>the same day</i></h3>
-        <p class="usp-desc" data-i18n="usp.03.desc">All retouched photos delivered same day or within 24 hours. Full-resolution originals, print-ready at any size, kept forever.</p>
-      </div>
-    </div>
+<!-- FINE ART PRINTS (featured band) -->
+<section id="prints">
+  <div class="prints-img" style="background-image:url('/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_03.webp')"></div>
+  <div class="prints-panel reveal">
+    <span class="eyebrow" data-i18n="prints.eyebrow">Fine Art Prints</span>
+    <h2 class="h2" data-i18n-html="prints.h2">Limited-edition prints,<br/><i>signed and numbered</i></h2>
+    <p class="body-text" data-i18n="prints.desc">Bring a piece of Vietnam into your home or workspace. Every print is produced in a limited edition on archival fine-art paper, signed and numbered by hand, with a certificate of authenticity.</p>
+    <a class="btn btn-solid" href="#contact" data-i18n="prints.cta">Enquire about prints</a>
   </div>
 </section>
 
-<!-- COLLECTIONS -->
-<section id="collections">
+<!-- TESTIMONIAL -->
+<section id="testimonial">
   <div class="container">
-    <div class="collections-head reveal">
-      <span class="eyebrow" data-i18n="col.eyebrow">Collections</span>
-      <h2 class="h2" data-i18n-html="col.h2">Nine stories,<br/><i>nine styles</i></h2>
-      <p class="body-text" data-i18n="col.desc">Each album is an independent creative journey. Click any collection to view the full work.</p>
-    </div>
-  </div>
-
-  <div class="col-groups">
-    <div class="col-group-item reveal" onclick="openAlbum('dt01')">
-      <img src="/albums/dt/01%20-%20Tay%20Bac%20-%20Mua%20Hoa/photo_05.webp" alt="Tây Bắc · Mùa Hoa" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col01.title">Tây Bắc · Mùa Hoa</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt02')">
-      <img src="/albums/dt/02%20-%20Toc%20Nguoi%20Vung%20Cao/photo_02.webp" alt="Tộc Người Vùng Cao" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col02.title">Tộc Người Vùng Cao</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt03')">
-      <img src="/albums/dt/03%20-%20Dong%20Que%20-%20Ruong%20Bac%20Thang/photo_01.webp" alt="Đồng Quê · Ruộng Bậc Thang" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col03.title">Đồng Quê · Ruộng Bậc Thang</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt04')">
-      <img src="/albums/dt/04%20-%20Ky%20Uc%20Tuoi%20Tho/photo_04.webp" alt="Ký Ức Tuổi Thơ" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col04.title">Ký Ức Tuổi Thơ</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt05')">
-      <img src="/albums/dt/05%20-%20Ngu%20Dan%20-%20Nhin%20Tu%20Tren%20Cao/photo_05.webp" alt="Ngư Dân · Nhìn Từ Trên Cao" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col05.title">Ngư Dân · Nhìn Từ Trên Cao</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt06')">
-      <img src="/albums/dt/06%20-%20Cho%20Bien%20-%20Ben%20Canh/photo_03.webp" alt="Chợ Biển · Bến Cảng" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col06.title">Chợ Biển · Bến Cảng</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt07')">
-      <img src="/albums/dt/07%20-%20Nghe%20Bien/photo_02.webp" alt="Nghề Biển" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col07.title">Nghề Biển</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
-      </div>
-    </div>
-    <div class="col-group-item reveal" onclick="openAlbum('dt08')">
-      <img src="/albums/dt/08%20-%20Lang%20Nghe%20Truyen%20Thong/photo_03.webp" alt="Làng Nghề Truyền Thống" loading="lazy"/>
-      <div class="col-group-overlay">
-        <span class="col-group-year">DT STUDIO</span>
-        <h3 class="col-group-title" data-i18n="col08.title">Làng Nghề Truyền Thống</h3>
-        <span class="col-group-cta" data-i18n="col.btn">View collection</span>
+    <div class="tm reveal">
+      <span class="eyebrow" data-i18n="fb.eyebrow">What clients say</span>
+      <blockquote class="tm-quote" data-i18n="fb.01.quote">"We commissioned Trieu to document our company's journey. The photographs he brought back were extraordinary: honest, intimate, and deeply respectful of the people in them."</blockquote>
+      <div class="tm-meta">
+        <span class="tm-name" data-i18n="fb.01.name">Nguyen Minh Phuc</span>
+        <span class="tm-service" data-i18n="fb.01.service">Commissioned Documentary · NGO project</span>
       </div>
     </div>
   </div>
-
 </section>
 
-<!-- PRICING -->
-<section id="pricing">
+<!-- CONTACT -->
+<section id="contact">
   <div class="container">
-    <div class="pricing-head reveal">
-      <span class="eyebrow" data-i18n="price.eyebrow">Pricing</span>
-      <h2 class="h2" data-i18n-html="price.h2">Three packages, <i>three stories</i></h2>
-      <p class="body-text" data-i18n="price.desc">From one beautiful moment to a legacy kept forever. No hidden fees.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="price-card reveal">
-        <span class="price-tag-name" data-i18n="price.01.tag">Gói 01</span>
-        <div class="price-title" data-i18n="price.01.title">The Moment</div>
-        <div class="price-sub" data-i18n="price.01.sub">Buổi chụp cả ngày, một concept, một câu chuyện.</div>
-        <div class="price-amount">11.950.000</div>
-        <div class="price-unit" data-i18n="price.unit">VND / buổi chụp</div>
-        <div class="price-sep"></div>
-        <ul class="price-list">
-          <li data-i18n="price.01.li1">1 concept, 1 địa điểm</li>
-          <li data-i18n="price.01.li2">15 ảnh chọn lọc và chỉnh sửa kỹ</li>
-          <li data-i18n="price.01.li3">File gốc độ phân giải cao</li>
-          <li data-i18n="price.01.li4">Quyền sử dụng ảnh đi kèm</li>
-          <li data-i18n="price.01.li5">Giao file trong vòng 3 ngày làm việc</li>
-        </ul>
-        <button class="price-cta" onclick="location.href='#cta-banner'" data-i18n="price.cta.book">Liên hệ đặt lịch</button>
-      </div>
-      <div class="price-card reveal">
-        <span class="price-tag-name" data-i18n="price.02.tag">Gói 02 · Được chọn nhiều nhất</span>
-        <div class="price-title" data-i18n="price.02.title">Phóng Sự · Tài Liệu</div>
-        <div class="price-sub" data-i18n="price.02.sub">Chụp phóng sự và ảnh tài liệu theo đặt hàng cho báo chí, tổ chức phi lợi nhuận và truyền thông.</div>
-        <div class="price-amount">19.120.000</div>
-        <div class="price-unit" data-i18n="price.unit">VND / buổi chụp</div>
-        <div class="price-sep"></div>
-        <ul class="price-list">
-          <li data-i18n="price.02.li1">Chụp cả ngày hoặc nhiều ngày thực địa</li>
-          <li data-i18n="price.02.li2">Phong cách phóng sự và tài liệu</li>
-          <li data-i18n="price.02.li3">Tuyển chọn và chỉnh sửa toàn bộ ảnh giao</li>
-          <li data-i18n="price.02.li4">File độ phân giải cao cho in ấn và kỹ thuật số</li>
-          <li data-i18n="price.02.li5">Quyền sử dụng báo chí đi kèm</li>
-          <li data-i18n="price.02.li6">Lên kế hoạch và briefing trước</li>
-          <li data-i18n="price.02.li7">Giao file trong vòng 5 ngày làm việc</li>
-        </ul>
-        <button class="price-cta" onclick="location.href='#cta-banner'" data-i18n="price.cta.book">Liên hệ đặt lịch</button>
-      </div>
-      <div class="price-card reveal">
-        <span class="price-tag-name" data-i18n="price.03.tag">Gói 03 · Cao Cấp</span>
-        <div class="price-title" data-i18n="price.03.title">Thương Mại</div>
-        <div class="price-sub" data-i18n="price.03.sub">Sản xuất ảnh theo yêu cầu cho chiến dịch quảng cáo, thương hiệu và dự án tổ chức.</div>
-        <div class="price-amount">30.592.000</div>
-        <div class="price-unit" data-i18n="price.unit">VND / buổi chụp</div>
-        <div class="price-sep"></div>
-        <ul class="price-list">
-          <li data-i18n="price.03.li1">Sản xuất nhiều ngày, toàn quốc</li>
-          <li data-i18n="price.03.li2">Ekip đầy đủ, thiết bị chuyên nghiệp</li>
-          <li data-i18n="price.03.li3">Số lượng ảnh không giới hạn, hậu kỳ cao cấp</li>
-          <li data-i18n="price.03.li4">Bản quyền thương mại, mọi định dạng</li>
-          <li data-i18n="price.03.li5">Brief sáng tạo và storyboard chi tiết</li>
-        </ul>
-        <button class="price-cta" onclick="location.href='#cta-banner'" data-i18n="price.cta.book">Liên hệ đặt lịch</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEEDBACK -->
-<section id="feedback">
-  <div class="fb-inner">
-    <div class="fb-head reveal">
-      <span class="eyebrow" data-i18n="fb.eyebrow">Client Reviews</span>
-      <h2 class="h2" data-i18n-html="fb.h2">What our clients<br/><i>say about us</i></h2>
-    </div>
-    <div class="fb-grid">
-      <div class="fb-card reveal">
-        <div class="fb-stars">★★★★★</div>
-        <blockquote class="fb-quote" data-i18n="fb.01.quote">"Mình cực kỳ hài lòng với buổi chụp tại Blue Moon Studio. Team rất nhiệt tình, hỗ trợ tạo dáng tận tâm nên ảnh lên vừa tự nhiên vừa sang."</blockquote>
-        <div class="fb-meta">
-          <div class="fb-avatar">MA</div>
-          <div>
-            <div class="fb-name" data-i18n="fb.01.name">Minh Anh</div>
-            <div class="fb-service" data-i18n="fb.01.service">Chân dung · Salon Victorian</div>
+    <div class="contact-grid">
+      <div class="contact-intro reveal">
+        <span class="eyebrow" data-i18n="contact.eyebrow">Get in touch</span>
+        <h2 class="h2" data-i18n-html="contact.h2">Your project starts<br/><i>with a message</i></h2>
+        <p class="body-text" data-i18n="contact.sub">For documentary commissions, print orders or image licensing, send a note below or reach me directly. I reply within one business day.</p>
+        <div class="contact-direct">
+          <a class="contact-line" href="tel:0942995875">
+            <span class="contact-line-label" data-i18n="contact.call">Call</span>
+            <span class="contact-line-val">0942 995 875</span>
+          </a>
+          <a class="contact-line" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer">
+            <span class="contact-line-label">Zalo</span>
+            <span class="contact-line-val">0942 995 875</span>
+          </a>
+          <div class="contact-line">
+            <span class="contact-line-label" data-i18n="contact.based">Based in</span>
+            <span class="contact-line-val">Hà Nội, Việt Nam</span>
           </div>
         </div>
       </div>
-      <div class="fb-card reveal">
-        <div class="fb-stars">★★★★★</div>
-        <blockquote class="fb-quote" data-i18n="fb.02.quote">"Không gian studio rất đẹp và hiện đại. Photographer hướng dẫn rất chuyên nghiệp nên buổi chụp diễn ra cực kỳ thoải mái."</blockquote>
-        <div class="fb-meta">
-          <div class="fb-avatar">KL</div>
-          <div>
-            <div class="fb-name" data-i18n="fb.02.name">Khánh Linh</div>
-            <div class="fb-service" data-i18n="fb.02.service">Chân dung · Áo Dài Phố Cổ</div>
+      <form class="contact-form reveal" onsubmit="return sendContact(event)">
+        <div class="field">
+          <label data-i18n="contact.name">Name</label>
+          <input type="text" name="name" required/>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label data-i18n="contact.email">Email</label>
+            <input type="email" name="email" required/>
+          </div>
+          <div class="field">
+            <label data-i18n="contact.phone">Phone</label>
+            <input type="tel" name="phone"/>
           </div>
         </div>
-      </div>
-      <div class="fb-card reveal">
-        <div class="fb-stars">★★★★★</div>
-        <blockquote class="fb-quote" data-i18n="fb.03.quote">"Gia đình mình chụp bộ ảnh kỷ niệm và thật sự vượt ngoài mong đợi. Các bé được ekip hỗ trợ rất kiên nhẫn, bắt được nhiều khoảnh khắc tự nhiên."</blockquote>
-        <div class="fb-meta">
-          <div class="fb-avatar">GĐ</div>
-          <div>
-            <div class="fb-name" data-i18n="fb.03.name">Gia đình chị Hương</div>
-            <div class="fb-service" data-i18n="fb.03.service">Ảnh gia đình · Phố Cổ Retro</div>
-          </div>
+        <div class="field">
+          <label data-i18n="contact.type">I'm interested in</label>
+          <select name="type">
+            <option data-i18n="contact.type.shoot">Documentary commission</option>
+            <option data-i18n="contact.type.print">Fine art prints</option>
+            <option data-i18n="contact.type.license">Image licensing</option>
+            <option data-i18n="contact.type.other">Something else</option>
+          </select>
         </div>
-      </div>
-      <div class="fb-card reveal">
-        <div class="fb-stars">★★★★★</div>
-        <blockquote class="fb-quote" data-i18n="fb.04.quote">"Ảnh branding của mình được chỉnh rất tinh tế và chuyên nghiệp. Team hiểu rõ concept mình muốn và cho ra thành phẩm rất cao cấp."</blockquote>
-        <div class="fb-meta">
-          <div class="fb-avatar">HN</div>
-          <div>
-            <div class="fb-name" data-i18n="fb.04.name">Hoàng Nam</div>
-            <div class="fb-service" data-i18n="fb.04.service">Branding · Biệt Thự Pháp</div>
-          </div>
+        <div class="field">
+          <label data-i18n="contact.msg">Message</label>
+          <textarea name="message" rows="4"></textarea>
         </div>
-      </div>
-      <div class="fb-card reveal">
-        <div class="fb-stars">★★★★★</div>
-        <blockquote class="fb-quote" data-i18n="fb.05.quote">"Từ khâu booking đến lúc nhận ảnh đều rất nhanh chóng. Ảnh cưới của tụi mình lên màu cực đẹp, cảm xúc và đúng style mong muốn."</blockquote>
-        <div class="fb-meta">
-          <div class="fb-avatar">TP</div>
-          <div>
-            <div class="fb-name" data-i18n="fb.05.name">Tú &amp; Phương</div>
-            <div class="fb-service" data-i18n="fb.05.service">Ảnh cưới · Váy Cưới Trắng</div>
-          </div>
-        </div>
-      </div>
-      <div class="fb-card reveal">
-        <div class="fb-stars">★★★★★</div>
-        <blockquote class="fb-quote" data-i18n="fb.06.quote">"Blue Moon Studio giúp mình có trải nghiệm chụp ảnh cực kỳ dễ chịu dù trước giờ không tự tin trước ống kính. Photographer hướng dẫn pose dáng rất có tâm."</blockquote>
-        <div class="fb-meta">
-          <div class="fb-avatar">BT</div>
-          <div>
-            <div class="fb-name" data-i18n="fb.06.name">Bảo Trân</div>
-            <div class="fb-service" data-i18n="fb.06.service">Chân dung · Hanfu Hồng</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- PROCESS -->
-<section id="process">
-  <div class="container">
-    <div class="process-head reveal">
-      <span class="eyebrow" data-i18n="proc.eyebrow">How It Works</span>
-      <h2 class="h2" data-i18n-html="proc.h2">From first contact<br/><i>to receiving your photos</i></h2>
-    </div>
-    <div class="process-grid">
-      <div class="process-step reveal">
-        <div class="process-n">01</div>
-        <span class="process-time" data-i18n="proc.01.time">Day 1</span>
-        <h4 class="process-title" data-i18n="proc.01.title">I listen to you</h4>
-        <p class="process-desc" data-i18n="proc.01.desc">Message me on Zalo or give me a call. I listen to your story and understand what you want before mentioning any package.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">02</div>
-        <span class="process-time" data-i18n="proc.02.time">Day 1 to 3</span>
-        <h4 class="process-title" data-i18n="proc.02.title">I suggest a concept</h4>
-        <p class="process-desc" data-i18n="proc.02.desc">I suggest concepts suited to your figure, personality, and story. We preview outfits, backgrounds, and the planned moodboard together.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">03</div>
-        <span class="process-time" data-i18n="proc.03.time">Booking</span>
-        <h4 class="process-title" data-i18n="proc.03.title">Confirm and deposit</h4>
-        <p class="process-desc" data-i18n="proc.03.desc">You lock in a date with a 30% deposit. Your session is confirmed and I begin preparing everything for the day.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">04</div>
-        <span class="process-time" data-i18n="proc.04.time">Before shoot day</span>
-        <h4 class="process-title" data-i18n="proc.04.title">I send your prep list</h4>
-        <p class="process-desc" data-i18n="proc.04.desc">2 to 3 days before, I send a detailed prep guide via Zalo: nails, hair, personal items, and small tips so you arrive feeling completely ready.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">05</div>
-        <span class="process-time" data-i18n="proc.05.time">Shoot day</span>
-        <h4 class="process-title" data-i18n="proc.05.title">Makeup and wardrobe</h4>
-        <p class="process-desc" data-i18n="proc.05.desc">Arrive at the studio and relax with my makeup artist. All outfits and accessories are already prepared. No rush, no pressure.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">06</div>
-        <span class="process-time" data-i18n="proc.06.time">Shoot day</span>
-        <h4 class="process-title" data-i18n="proc.06.title">Unlimited shoot session</h4>
-        <p class="process-desc" data-i18n="proc.06.desc">I guide you through posing, angles, and storytelling. I shoot until you love every single frame; no one will rush you.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">07</div>
-        <span class="process-time" data-i18n="proc.07.time">Same day</span>
-        <h4 class="process-title" data-i18n="proc.07.title">Retouching and colour grading</h4>
-        <p class="process-desc" data-i18n="proc.07.desc">I carefully retouch and colour-grade every photo in Blue Moon's signature style, enhancing your natural beauty without erasing what makes you uniquely you.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-n">08</div>
-        <span class="process-time" data-i18n="proc.08.time">Within 24 hours</span>
-        <h4 class="process-title" data-i18n="proc.08.title">You receive your photos and keep them forever</h4>
-        <p class="process-desc" data-i18n="proc.08.desc">All full-resolution originals delivered via Google Drive, kept forever, print-ready at any size, yours for any purpose.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq">
-  <div class="container">
-    <div class="faq-inner">
-      <div class="faq-head reveal">
-        <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
-        <h2 class="h2" data-i18n-html="faq.h2">Frequently asked<br/><i>questions</i></h2>
-        <p class="body-text" style="margin-top:20px" data-i18n="faq.note">Hãy nhắn tin cho mình bất cứ lúc nào bạn sẵn sàng. Mình sẽ lắng nghe câu chuyện của bạn và từ từ tìm ra concept phù hợp nhất, không vội vàng, không áp lực.</p>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item reveal">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <span class="faq-q-text" data-i18n="faq.q1">What do I need to prepare before the session?</span>
-            <div class="faq-icon"></div>
-          </div>
-          <div class="faq-a"><p class="faq-a-text" data-i18n="faq.a1">AURA prepares all outfits and accessories for the agreed concept. You just need to arrive on time with a relaxed mind. The team will send a detailed prep list via Zalo 2–3 days before, including tips on nails, hair, and things to note.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <span class="faq-q-text" data-i18n="faq.q2">How long does a session take?</span>
-            <div class="faq-icon"></div>
-          </div>
-          <div class="faq-a"><p class="faq-a-text" data-i18n="faq.a2">On average 2 to 4 hours depending on the number of concepts and your package. AURA sets no time limit. We shoot until you have all the frames you love. No one will rush you.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <span class="faq-q-text" data-i18n="faq.q3">When will I receive my photos?</span>
-            <div class="faq-icon"></div>
-          </div>
-          <div class="faq-a"><p class="faq-a-text" data-i18n="faq.a3">Fully retouched photos are delivered the same day or within 24 hours via Google Drive. Full-resolution originals, printable at A0 and above. You retain personal usage rights.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <span class="faq-q-text" data-i18n="faq.q4">I don't know how to pose. Can I still shoot?</span>
-            <div class="faq-icon"></div>
-          </div>
-          <div class="faq-a"><p class="faq-a-text" data-i18n="faq.a4">Absolutely. Our dedicated posing assistant guides you through every natural pose throughout the session. You don't need to know how to pose. Just relax and follow the guidance. The results will be more natural and beautiful than self-directed posing.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <span class="faq-q-text" data-i18n="faq.q5">Can I book a group or couple session?</span>
-            <div class="faq-icon"></div>
-          </div>
-          <div class="faq-a"><p class="faq-a-text" data-i18n="faq.a5">Absolutely. AURA welcomes couples, friends, families, and small groups. Contact us directly via Zalo for personalised package advice and an accurate quote based on group size.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-q" onclick="toggleFaq(this)">
-            <span class="faq-q-text" data-i18n="faq.q6">What is the cancellation and refund policy?</span>
-            <div class="faq-icon"></div>
-          </div>
-          <div class="faq-a"><p class="faq-a-text" data-i18n="faq.a6">Cancellations more than 72 hours in advance receive a 100% deposit refund. Within 48 hours: 50% refund. Same-day cancellations are non-refundable. Rescheduling is free if requested at least 48 hours in advance and subject to availability.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA BANNER -->
-<section id="cta-banner">
-  <div class="container" style="text-align:center">
-    <div class="cta-banner-eyebrow reveal" data-i18n="cta.eyebrow">Book a session</div>
-    <h2 class="cta-banner-h reveal" data-i18n="cta.h2">Your project starts with a message.</h2>
-    <p class="cta-banner-sub reveal" data-i18n="cta.sub">For documentary commissions, print licensing, or editorial assignments, reach out and I'll respond within one business day.</p>
-    <div class="cta-banner-contact reveal">
-      <span class="cta-banner-label" data-i18n="cta.label">Zalo · Call</span>
-      <a class="cta-banner-phone" href="tel:0942995875">0942 995 875</a>
-    </div>
-    <div class="cta-banner-btns reveal">
-      <a class="btn btn-ghost" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer" data-i18n="cta.zalo">Zalo</a>
-      <a class="btn btn-ghost" href="tel:0942995875" data-i18n="cta.call">Call</a>
+        <button type="submit" class="btn btn-solid btn-block" data-i18n="contact.send">Send message</button>
+      </form>
     </div>
   </div>
 </section>
@@ -543,24 +297,28 @@
       <div>
         <div class="footer-brand-name">DT STUDIO<span class="dot">.</span></div>
         <p class="footer-brand-desc" data-i18n="footer.brand.desc">Documentary &amp; fine art photography by Trần Đình Triệu, Hà Nội. Over a decade photographing Vietnam's people, landscapes, and way of life.</p>
+        <div class="footer-soc">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-8h2.4l.4-3h-2.8V8.1c0-.85.27-1.43 1.5-1.43H16.8V4.05A20 20 0 0 0 14.6 3.9c-2.2 0-3.7 1.34-3.7 3.8V10H8.4v3h2.5v8z"/></svg></a>
+        </div>
       </div>
       <div>
         <div class="footer-title" data-i18n="footer.col2">Explore</div>
         <div class="footer-links">
-          <a href="#collections" data-i18n="footer.exp.01">Collections</a>
-          <a href="#feedback" data-i18n="footer.exp.02">Client stories</a>
-          <a href="#pricing" data-i18n="footer.exp.03">Pricing</a>
-          <a href="#process" data-i18n="footer.exp.04">How it works</a>
-          <a href="#faq" data-i18n="footer.exp.05">FAQ</a>
+          <a href="#collections" data-i18n="footer.exp.01">All collections</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#prints" data-i18n="nav.prints">Fine Art Prints</a>
+          <a href="#testimonial" data-i18n="nav.stories">Reviews</a>
+          <a href="#contact" data-i18n="nav.cta">Contact</a>
         </div>
       </div>
       <div>
         <div class="footer-title" data-i18n="footer.col3">Contact</div>
-        <p class="footer-addr">Hà Nội, Việt Nam<br/><span data-i18n-html="footer.hours">Open: 8:00 – 20:00<br/>Monday – Sunday</span><br/><br/><a href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.55)">0942 995 875</a><br/><a href="mailto:info@dtstudio.chartedconsultants.com" style="color:rgba(255,255,255,.55)">info@dtstudio.chartedconsultants.com</a></p>
+        <p class="footer-addr">Hà Nội, Việt Nam<br/><span data-i18n-html="footer.hours">Available: Mon – Sat<br/>9:00 to 18:00</span><br/><br/><a href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer">0942 995 875</a><br/><a href="mailto:info@dtstudio.chartedconsultants.com">info@dtstudio.chartedconsultants.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy" data-i18n="footer.copy">© 2024–2026 DT Studio. All rights reserved.</span>
+      <span class="footer-copy" data-i18n="footer.copy">© 2026 DT Studio · Trần Đình Triệu. All rights reserved.</span>
       <span class="footer-made" data-i18n="footer.made">Photographer Trần Đình Triệu</span>
     </div>
   </div>
@@ -596,18 +354,6 @@
   <button class="award-modal-close" onclick="closeAwardPhoto()">✕</button>
   <img id="award-modal-img" src="" alt=""/>
   <div id="award-modal-caption"></div>
-</div>
-
-<!-- FLOAT BUTTONS -->
-<div class="float-wrap">
-  <a class="float-btn float-zalo" href="https://zalo.me/0942995875" target="_blank" rel="noopener noreferrer" data-i18n="float.zalo">
-    <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.782 0.166H27.199C33.265 0.166 36.81 1.057 39.957 2.744C43.104 4.431 45.588 6.896 47.256 10.043C48.943 13.19 49.834 16.735 49.834 22.801V27.199C49.834 33.265 48.943 36.81 47.256 39.957C45.569 43.104 43.104 45.588 39.957 47.256C36.81 48.943 33.265 49.834 27.199 49.834H22.801C16.735 49.834 13.19 48.943 10.043 47.256C6.896 45.569 4.412 43.104 2.744 39.957C1.057 36.81 0.166 33.265 0.166 27.199V22.801C0.166 16.735 1.057 13.19 2.744 10.043C4.431 6.896 6.896 4.412 10.043 2.744C13.171 1.057 16.735 0.166 22.782 0.166Z" fill="white"/><path d="M20.563 17H10.838V19.085H17.587L10.933 27.332C10.724 27.635 10.573 27.919 10.573 28.564V29.095H19.748C20.203 29.095 20.582 28.716 20.582 28.261V27.142H13.492L19.748 19.294C19.843 19.18 20.013 18.972 20.089 18.877L20.127 18.82C20.487 18.289 20.563 17.834 20.563 17.284V17Z" fill="#0068FF"/><path d="M32.942 29.095H34.326V17H32.24V28.393C32.24 28.773 32.544 29.095 32.942 29.095Z" fill="#0068FF"/><path d="M25.814 19.692C23.198 19.692 21.075 21.816 21.075 24.432C21.075 27.048 23.198 29.171 25.814 29.171C28.43 29.171 30.553 27.048 30.553 24.432C30.572 21.816 28.449 19.692 25.814 19.692ZM25.814 27.218C24.279 27.218 23.027 25.967 23.027 24.432C23.027 22.896 24.279 21.645 25.814 21.645C27.35 21.645 28.601 22.896 28.601 24.432C28.601 25.967 27.369 27.218 25.814 27.218Z" fill="#0068FF"/><path d="M40.487 19.616C37.852 19.616 35.71 21.758 35.71 24.393C35.71 27.029 37.852 29.171 40.487 29.171C43.122 29.171 45.264 27.029 45.264 24.393C45.264 21.758 43.122 19.616 40.487 19.616ZM40.487 27.218C38.932 27.218 37.681 25.967 37.681 24.412C37.681 22.858 38.932 21.607 40.487 21.607C42.041 21.607 43.292 22.858 43.292 24.412C43.292 25.967 42.041 27.218 40.487 27.218Z" fill="#0068FF"/><path d="M29.456 29.094H30.575V19.957H28.622V28.279C28.622 28.715 29.001 29.094 29.456 29.094Z" fill="#0068FF"/></svg>
-    Zalo
-  </a>
-  <a class="float-btn float-phone" href="tel:0942995875" data-i18n="float.call">
-    <i data-lucide="phone"></i>
-    Gọi ngay
-  </a>
 </div>
 
 <script type="module" src="/src/main.js"></script>
