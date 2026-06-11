@@ -342,4 +342,8 @@ a.contact-line:hover .contact-line-val{color:var(--accent)}
 }
 @media(max-width:440px){
   .tile-grid{grid-template-columns:1fr}
+  .nav-soc{display:none}
+  .nav-logo-name{font-size:18px;letter-spacing:3px}
+  .nav-top{padding:0 18px}
+  .hero-eyebrow{letter-spacing:2.5px}
 }
