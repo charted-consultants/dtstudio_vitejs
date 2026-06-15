@@ -149,7 +149,7 @@ function sendContact(e) {
   const body =
     `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${type}\n\n${message}`
   window.location.href =
-    `mailto:info@dtstudio.chartedconsultants.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    `mailto:info@dinhtrieustudio.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
   return false
 }
 

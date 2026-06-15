@@ -233,7 +233,7 @@ export const T = {
     'footer.exp.05':     'FAQ',
     'footer.col3':       'Contact',
     'footer.hours':      'Available: Mon – Sat<br/>9:00 to 18:00',
-    'footer.copy':       '© 2026 DT Studio · Tran Dinh Trieu. All rights reserved.',
+    'footer.copy':       '© 2026 DT Studio · Tran Dinh Trieu.',
     'footer.made':       'Photographer Tran Dinh Trieu',
 
     // Fine Art Prints
@@ -497,7 +497,7 @@ export const T = {
     'footer.exp.05':     'Hỏi đáp',
     'footer.col3':       'Liên hệ',
     'footer.hours':      'Làm việc: Thứ Hai – Thứ Bảy<br/>9:00 đến 18:00',
-    'footer.copy':       '© 2026 DT Studio · Trần Đình Triệu. Bảo lưu mọi quyền.',
+    'footer.copy':       '© 2026 DT Studio · Trần Đình Triệu.',
     'footer.made':       'Nhiếp ảnh gia Trần Đình Triệu',
 
     // Fine Art Prints
